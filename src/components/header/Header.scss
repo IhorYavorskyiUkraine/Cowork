@@ -1,0 +1,225 @@
+$humble-black: #1d1e1c;
+$humble-black-hover: #3a3a3a;
+$second-family: "NeueRegradeBold", sans-serif;
+
+.header {
+	z-index: 1000;
+	padding: .75rem 0rem;
+	margin-bottom: 7rem;
+	@media (max-width: 991px){
+		margin-bottom: 3rem;
+	}
+	@media (max-width: 771px){
+		margin-bottom: 4.5rem;
+		padding: 1.3rem 0rem;
+	}
+
+	&__menu {
+
+	}
+}
+
+.btns {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	span {
+		font-size: .875rem;
+		font-weight: 600;
+	}
+	&__login {
+		background: #fff;
+		span {
+			color: #000;
+		}
+	}
+
+	&__singup {
+	}
+}
+
+
+.menu {
+	display: grid;
+	grid-template-columns: 7.5rem auto 13.25rem;
+	align-items: center;
+	&__logo {
+		display: flex;
+		align-items: center;
+		width: 7.5rem;
+		height: 1.5rem;
+		position: relative;
+		&_w {
+			position: absolute;
+			top: 1.5625rem;
+			left: 1.25rem;
+		}
+		@media (max-width: 771px){
+			width: 6.25rem;
+			height: 1.25rem;
+		}
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__icon {
+	}
+
+	&__body {
+		@media (max-width: 771px){
+			display: none;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		gap: 3rem;
+		justify-content: flex-end;
+		padding-right: 3.125rem;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-weight: 400;
+		line-height: 180%;
+		color: $humble-black;
+		transition: all .3s;
+		&:hover {
+			color: $humble-black-hover;
+		}
+	}
+
+	&__log {
+		
+	}
+}
+
+.menu-item {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 120%;
+	font-family: $second-family;
+}
+
+.log {
+	display: flex;
+	gap: 1.25rem;
+	font-weight: 600;
+	font-size: .875rem;
+	@media (max-width: 771px){
+		display: none;
+	}
+	&__login {
+		background: #fff;
+		transition: all .3s;
+		&:hover {
+			background: #f1f1f1;
+		}
+		span {
+			color: $humble-black;
+		}
+	}
+
+	&__signup {
+		background: #000;
+		display: inline-flex;
+		transition: all .3s;
+		&:hover {
+			background: $humble-black-hover;
+		}
+		span {
+			color: #fff;
+		}
+	}
+}
+
+.bm-burger-button {
+	z-index: 1002;
+	position: fixed;
+	width: 24px;
+	height: 18px;
+	right: 35px;
+	top: 27px;
+	display: none;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 3.75rem;
+		height: 2.8125rem;
+		background: $humble-black;
+		border-radius: 2.625rem;
+		top: -70%;
+		left: -70%;
+	}
+	@media (max-width: 771px){
+		display: block;
+	}
+}
+
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+ 
+.bm-cross {
+	background: #bdc3c7;
+}
+
+.bm-burger-bars-hover {
+	background: #a90000;
+}
+
+.bm-menu-wrap {
+	position: fixed;
+	height: 100%;
+}
+ 
+.bm-menu {
+	background: $humble-black;
+	padding: 2.5em 1.5em 0;
+	font-size: 1.15em;
+}
+ 
+.bm-morph-shape {
+	fill: #373a47;
+}
+ 
+.bm-item-list {
+	color: #b8b7ad;
+	padding: 4em 0rem 0rem 0rem;
+}
+ 
+.bm-item {
+	display: inline-block;
+	padding-bottom: 2rem;
+	font-size: 2rem;
+	color: #fff;
+}
+ 
+.bm-icon {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 3.75rem;
+		height: 2.8125rem;
+		padding: .75rem;
+		background: $humble-black;
+		border-radius: 2.625rem;
+		top: 0;
+		left: 0;
+	}
+}
+
+.bm-overlay {
+	background: $humble-black;
+}
