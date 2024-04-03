@@ -69,7 +69,7 @@ a {
 }
 ul li {
 	list-style: none;
- }
+}
  img {
 	vertical-align: top;
 }
@@ -111,11 +111,31 @@ $humble-black-hover: #3a3a3a;
 	}
 }
 
+.label {
+	font-weight: 600;
+	font-size: .75rem;
+	line-height: 150%;
+	text-transform: uppercase;
+	font-family: $font-family;
+	color: $humble-black;
+}
+
 .title {
 	font-size: 3rem;
 	font-family: $second-family;
 	font-weight: 700;
 	color: $humble-black;
+	img {
+		width: 11.25rem;
+		height: 3.625rem;
+		@media (max-width: 771px){
+			width: 7.5rem;
+			height: 2.1875rem;
+		}
+	}
+	@media (max-width: 771px){
+		font-size: 1.5rem;
+	}
 }
 
 .container {

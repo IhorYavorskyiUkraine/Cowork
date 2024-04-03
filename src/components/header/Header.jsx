@@ -1,6 +1,7 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 import { useState } from "react";
 import { slide as Menu } from 'react-burger-menu'
+import { motion } from 'framer-motion';
 
 import logo from "../../assets/img/header/logo.png";
 import burgerLogo from "../../assets/img/header/burgerLogo.png";
@@ -11,10 +12,12 @@ import "./Header.scss"
 const Header = () => {
 
 	const [lock, setLock] = useState(false);
+
 	const handleLock = () => {
 		setLock(!lock)
 		lock ? document.body.classList.add('lock') : document.body.classList.remove('lock');
 	}
+
 	return(
 		<>
 			<Menu 
@@ -29,12 +32,17 @@ const Header = () => {
 				<a id="about" className="menu-item" href="/about">Pricing</a>
 				<a id="contact" className="menu-item" href="/contact">Blog</a>
 				<a id="settings" className="menu-item" href="">Events</a>
-				<div className="menu__btns btns">
-					<a to="" className="btns__singup"><span>Sign Up</span></a>
-					<a to="" className="btns__login"><span>Log In</span></a>
+				<div className="bm-btns">
+					<a to="" className="bm-btns__singup"><span>Sign Up</span></a>
+					<a to="" className="bm-btns__login"><span>Log In</span></a>
 				</div>
 			</Menu>
-			<header className="header">
+			<motion.header 
+				className="header"
+				initial={{opacity: 0}}
+				animate={{opacity: 1}}
+				transition={{duration: .4}}
+				>
 				<div className="container">
 					<div className="header__menu menu">
 						<a href="/" className="menu__icon">
@@ -62,7 +70,7 @@ const Header = () => {
 						</div>
 					</div>
 				</div>
-			</header>
+			</motion.header>
 		</>
 	)
 }

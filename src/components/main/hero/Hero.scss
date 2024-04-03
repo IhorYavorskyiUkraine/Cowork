@@ -3,7 +3,13 @@ $humble-black: #1d1e1c;
 $humble-black-hover: #3a3a3a;
 
 .hero {
-
+	padding: 7rem 0rem;
+	@media (max-width: 991px){
+		padding: 3rem 0rem;
+	}
+	@media (max-width: 771px){
+		padding: 4rem 0rem;
+	}
 	&__content {
 		display: grid;
 		grid-template-columns: 38.75rem 1fr;

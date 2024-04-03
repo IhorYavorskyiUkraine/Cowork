@@ -1,0 +1,73 @@
+$second-family: "NeueRegradeBold", sans-serif;
+
+.whychoose {
+	padding: 7rem 0rem;
+	@media (max-width: 991px){
+		padding: 3rem 0rem;
+	}
+	@media (max-width: 771px){
+		padding: 4rem 0rem;
+	}
+	&__content {
+	}
+
+	&__title {
+		display: inline-flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 5rem;
+		text-align: center;
+		span {
+			padding: 0px 1rem;
+			@media (max-width: 771px){
+				padding: 0rem;
+			}
+		}
+		@media (max-width: 771px){
+			display: block;
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(20rem, 25.3125rem));
+		gap: 3rem;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: 771px){
+			row-gap: 2rem; 
+		}
+	}
+
+	&__item {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.whychoose-item {
+	list-style: none;
+	text-align: center;
+	&__wrapper {
+	}
+
+	&__image {
+		margin-bottom: 1.5rem;
+	}
+
+	&__title {
+		font-weight: 700;
+		line-height: 140%;
+		font-size: 1.5rem;
+		font-family: $second-family;
+		margin-bottom: 1.5rem;
+		@media (max-width: 771px){
+			font-size: 1rem;
+		}
+	}
+
+	&__text {
+	}
+}
