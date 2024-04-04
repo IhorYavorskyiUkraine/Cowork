@@ -1,0 +1,46 @@
+.roadmap {
+	padding: 7rem 0rem;
+	@media (max-width: 991px){
+		padding: 3rem 0rem;
+	}
+	@media (max-width: 771px){
+		padding: 4rem 0rem;
+	}
+	&__content {
+		display: grid;
+		grid-template-columns: 33.1rem 1fr;
+		column-gap: 2rem;
+		@media (max-width: 1280px){
+			grid-template-columns: 26.25rem 1fr;
+		}
+		@media (max-width: 991px){
+			grid-template-columns: auto;
+			row-gap: 1rem;
+		}
+	}
+
+	&__column {
+	}
+
+	&__text {
+		@media (max-width: 991px){
+			text-align: center;
+		}
+	}
+
+	&__label {
+		margin-bottom: 1rem;
+	}
+
+	&__title {
+		margin-bottom: 1.5rem;
+		line-height: 120%;
+	}
+
+	&__p {
+		max-width: 24.375rem;
+		@media (max-width: 991px){
+			margin: 0 auto;
+		}
+	}
+}

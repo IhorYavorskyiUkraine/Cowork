@@ -3,9 +3,9 @@ import { useState } from "react";
 import { slide as Menu } from 'react-burger-menu'
 import { motion } from 'framer-motion';
 
-import logo from "../../assets/img/header/logo.png";
-import burgerLogo from "../../assets/img/header/burgerLogo.png";
-import burger from "../../assets/img/header/burger.png";
+import logo from "/images/header/logo.png";
+import burgerLogo from "/images/header/burgerLogo.png";
+import burger from "/images/header/burger.png";
 
 import "./Header.scss"
 

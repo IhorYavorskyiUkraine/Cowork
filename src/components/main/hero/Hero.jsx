@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-import img from "../../../assets/img/hero/image.png"
+import img from "/images/hero/image.png"
 
 import "./Hero.scss"
 

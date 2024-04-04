@@ -53,14 +53,14 @@ $humble-black-hover: #3a3a3a;
 			&:before {
 				content: "";
 				position: absolute;
-				background: url("../../../assets/img/hero/1.png") center / 21rem 8.125rem no-repeat;
+				background: url("/images/hero/1.png") center / 21rem 8.125rem no-repeat;
 				width: 21rem;
 				height: 8.125rem;
 				top: -1rem;
 				left: 0rem;
 				z-index: -1;
 				@media (max-width: 991px){
-					background: url("../../../assets/img/hero/1.png") center / 14.5rem 5.6rem no-repeat;
+					background: url("/images/hero/1.png") center / 14.5rem 5.6rem no-repeat;
 					top: -2rem;
 					left: -3.5rem;
 				}

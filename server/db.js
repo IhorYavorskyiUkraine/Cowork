@@ -49,6 +49,117 @@ export const serverData = [
 				title: "Tailored Memberships",
 				text: "Whether you prefer the flexibility of a hot desk or the exclusivity of a private office, Cowork offers tailored solutions to suit every working style."
 			}
+		],
+		"hearClients": [
+			{
+				id: 1,
+				name: "Liam Brown",
+				image: "images/hearClient/1.png",
+				text: "'The 24/7 access and secure facilities have been incredibly convenient for my team's flexible schedules. We love the coworking space!",
+				position: "Software Engineer, TechStartup Innovations"
+			},
+			{
+				id: 2,
+				name: "Michael Rodriguez",
+				image: "images/hearClient/2.png",
+				text: "'The aesthetics of Cowork are inspiring. The attention to detail in the design creates an atmosphere that sparks creativity. It's a place where ideas flow effortlessly, and collaboration happens organically.'",
+				position: " Creative Director, DesignCraft Studio"
+			},
+			{
+				id: 3,
+				name: "Michael Thompson",
+				image: "images/hearClient/3.png",
+				text: "'As a freelance designer, I was getting tired of working from home or coffee shops. The coworking space has provided me with a productive and professional environment to focus on my work.'",
+				position: "Graphic Designer, DesignCo"
+			},
+			{
+				id: 4,
+				name: "David Wilson",
+				image: "images/hearClient/4.png",
+				text: "'The coworking space has been a wonderful resource for my team. The open floor plan and dedicated private offices allow us to collaborate and concentrate as needed.'",
+				position: "Project Manager, SoftwareSolutions LLC"
+			},
+			{
+				id: 5,
+				name: "Alex Nguyen",
+				image: "images/hearClient/5.png",
+				text: "'The flexible membership options and amenities like high-speed internet, printers, and meeting rooms have made this coworking space a perfect fit for my small business.'",
+				position: "Marketing Consultant, Maverick Marketing"
+			}
+		],
+		"tables": [
+			{
+				id: 1,
+				image: "/images/insights/tables/1.png",
+				trend: "Trending",
+				time: "7 min read",
+				title: "Navigating the Future: Trends in Modern Coworking Spaces",
+				more: "https://www.google.com/"
+			},
+			{
+				id: 2,
+				image: "/images/insights/tables/2.png",
+				trend: "Productivity",
+				time: "5 min read",
+				title: "Mastering Productivity: Tips from Cowork's High Achievers",
+				more: "https://www.google.com/"
+			},
+			{
+				id: 3,
+				image: "/images/insights/tables/3.png",
+				trend: "Talk",
+				time: "10 min read",
+				title: "Tech Talk: The Backbone of Cowork's Seamless Experience",
+				more: "https://www.google.com/"
+			},
+			{
+				id: 4,
+				image: "/images/insights/tables/1.png",
+				trend: "Trending",
+				time: "7 min read",
+				title: "Navigating the Future: Trends in Modern Coworking Spaces",
+				more: "https://www.google.com/"
+			},
+			{
+				id: 5,
+				image: "/images/insights/tables/2.png",
+				trend: "Productivity",
+				time: "5 min read",
+				title: "Mastering Productivity: Tips from Cowork's High Achievers",
+				more: "https://www.google.com/"
+			},
+			{
+				id: 6,
+				image: "/images/insights/tables/3.png",
+				trend: "Talk",
+				time: "10 min read",
+				title: "Tech Talk: The Backbone of Cowork's Seamless Experience",
+				more: "https://www.google.com/"
+			},
+			{
+				id: 7,
+				image: "/images/insights/tables/1.png",
+				trend: "Trending",
+				time: "7 min read",
+				title: "Navigating the Future: Trends in Modern Coworking Spaces",
+				more: "https://www.google.com/"
+			},
+			{
+				id: 8,
+				image: "/images/insights/tables/2.png",
+				trend: "Productivity",
+				time: "5 min read",
+				title: "Mastering Productivity: Tips from Cowork's High Achievers",
+				more: "https://www.google.com/"
+			},
+			{
+				id: 9,
+				image: "/images/insights/tables/3.png",
+				trend: "Talk",
+				time: "10 min read",
+				title: "Tech Talk: The Backbone of Cowork's Seamless Experience",
+				more: "https://www.google.com/"
+			}
 		]
 	}
 ]
