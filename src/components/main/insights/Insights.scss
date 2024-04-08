@@ -36,8 +36,26 @@ $humble-black: #1d1e1c;
 
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(3, 26rem);
+		grid-template-columns: repeat(auto-fill, minmax(21rem, 26rem));
+		justify-content: center;
 		gap: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	&__btn {
+		display: flex;
+	}
+
+	&__button {
+		margin: 0 auto;
+		transition: all .3s;
+		&:hover {
+			background: #f1f1f1;
+		}
+		&_disabled {
+			margin: 0 auto;
+			background: #f1f1f1;
+		}
 	}
 }
 
@@ -47,7 +65,7 @@ $humble-black: #1d1e1c;
 	}
 
 	&__image {
-		width: 26rem;
+		max-width: 26rem;
 		height: 18.75rem;
 		position: relative;
 		margin-bottom: 1.5rem;
@@ -57,6 +75,10 @@ $humble-black: #1d1e1c;
 			object-fit: cover;
 			position: absolute;
 			border-radius: 24px;
+			transition: all .3s;
+			&:hover {
+				transform: scale(1.01);
+			}
 		}
 	}
 
@@ -70,7 +92,6 @@ $humble-black: #1d1e1c;
 	&__trend {
 		padding: .125rem .5rem;
 		border-radius: 8px;
-		background: rgb(166, 232, 246);
 		font-weight: 600;
 		line-height: 150%;
 	}

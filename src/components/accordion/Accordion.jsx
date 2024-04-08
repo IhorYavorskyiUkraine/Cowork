@@ -40,7 +40,7 @@ const AccordionComponent = () => {
 				<AccordionItemHeading className="accordion__heading">
 					<AccordionItemButton className="accordion__button"><span>Can I tour the Cowork space before committing to a membership?</span><img src={img} alt=""/></AccordionItemButton>
 				</AccordionItemHeading>
-				<AccordionItemPanel>
+				<AccordionItemPanel className="accordion__panel text">
 					<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas, possimus dicta, nemo ut non vero maiores iste hic quas illo, velit nisi vel quisquam maxime magnam totam iusto eligendi?
 					</p>

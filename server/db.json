@@ -1,0 +1,94 @@
+{
+	"tables": [
+		{
+			"id": 1,
+			"image": "/images/insights/tables/1.png",
+			"trend": "Trending",
+			"time": "7 min read",
+			"title": "Navigating the Future: Trends in Modern Coworking Spaces",
+			"more": "https://www.google.com/",
+			"style": "rgb(166, 232, 246)"
+		},
+		{
+			"id": 2,
+			"image": "/images/insights/tables/2.png",
+			"trend": "Productivity",
+			"time": "5 min read",
+			"title": "Mastering Productivity: Tips from Cowork's High Achievers",
+			"more": "https://www.google.com/",
+			"style": "rgb(252, 190, 220)"
+		},
+		{
+			"id": 3,
+			"image": "/images/insights/tables/3.png",
+			"trend": "Talk",
+			"time": "10 min read",
+			"title": "Tech Talk: The Backbone of Cowork's Seamless Experience",
+			"more": "https://www.google.com/",
+			"style": "rgb(211, 249, 133)"
+		},
+		{
+			"id": 4,
+			"image": "/images/insights/tables/1.png",
+			"trend": "Trending",
+			"time": "7 min read",
+			"title": "Navigating the Future: Trends in Modern Coworking Spaces",
+			"more": "https://www.google.com/",
+			"style": "rgb(166, 232, 246)"
+		},
+		{
+			"id": 5,
+			"image": "/images/insights/tables/2.png",
+			"trend": "Productivity",
+			"time": "5 min read",
+			"title": "Mastering Productivity: Tips from Cowork's High Achievers",
+			"more": "https://www.google.com/",
+			"style": "rgb(252, 190, 220)"
+		},
+		{
+			"id": 6,
+			"image": "/images/insights/tables/3.png",
+			"trend": "Talk",
+			"time": "10 min read",
+			"title": "Tech Talk: The Backbone of Cowork's Seamless Experience",
+			"more": "https://www.google.com/",
+			"style": "rgb(211, 249, 133)"
+		},
+		{
+			"id": 7,
+			"image": "/images/insights/tables/1.png",
+			"trend": "Trending",
+			"time": "7 min read",
+			"title": "Navigating the Future: Trends in Modern Coworking Spaces",
+			"more": "https://www.google.com/",
+			"style": "rgb(166, 232, 246)"
+		},
+		{
+			"id": 8,
+			"image": "/images/insights/tables/2.png",
+			"trend": "Productivity",
+			"time": "5 min read",
+			"title": "Mastering Productivity: Tips from Cowork's High Achievers",
+			"more": "https://www.google.com/",
+			"style": "rgb(252, 190, 220)"
+		},
+		{
+			"id": 9,
+			"image": "/images/insights/tables/3.png",
+			"trend": "Talk",
+			"time": "10 min read",
+			"title": "Tech Talk: The Backbone of Cowork's Seamless Experience",
+			"more": "https://www.google.com/",
+			"style": "rgb(211, 249, 133)"
+		},
+		{
+			"id": 10,
+			"image": "/images/insights/tables/3.png",
+			"trend": "Talk",
+			"time": "10 min read",
+			"title": "Tech Talk: The Backbone of Cowork's Seamless Experience",
+			"more": "https://www.google.com/",
+			"style": "rgb(211, 249, 133)"
+		}
+	]
+}

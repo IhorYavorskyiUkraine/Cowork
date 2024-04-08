@@ -1,4 +1,3 @@
-import Header from "../header/Header";
 import Hero from "./hero/Hero";
 import Trusted from "./trusted/Trusted"
 import WhyChoose from "./whyChoose/WhyChoose";
@@ -12,7 +11,6 @@ import Insights from "./insights/Insights";
 const Main = () => {
 	return(
 		<main className="main">
-			<Header/>
 			<Hero/>
 			<Trusted/>
 			<WhyChoose/>

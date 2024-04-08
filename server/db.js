@@ -94,7 +94,8 @@ export const serverData = [
 				trend: "Trending",
 				time: "7 min read",
 				title: "Navigating the Future: Trends in Modern Coworking Spaces",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(166, 232, 246)"
 			},
 			{
 				id: 2,
@@ -102,7 +103,8 @@ export const serverData = [
 				trend: "Productivity",
 				time: "5 min read",
 				title: "Mastering Productivity: Tips from Cowork's High Achievers",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(252, 190, 220)"
 			},
 			{
 				id: 3,
@@ -110,7 +112,8 @@ export const serverData = [
 				trend: "Talk",
 				time: "10 min read",
 				title: "Tech Talk: The Backbone of Cowork's Seamless Experience",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(211, 249, 133)"
 			},
 			{
 				id: 4,
@@ -118,7 +121,8 @@ export const serverData = [
 				trend: "Trending",
 				time: "7 min read",
 				title: "Navigating the Future: Trends in Modern Coworking Spaces",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(166, 232, 246)"
 			},
 			{
 				id: 5,
@@ -126,7 +130,8 @@ export const serverData = [
 				trend: "Productivity",
 				time: "5 min read",
 				title: "Mastering Productivity: Tips from Cowork's High Achievers",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(252, 190, 220)"
 			},
 			{
 				id: 6,
@@ -134,7 +139,8 @@ export const serverData = [
 				trend: "Talk",
 				time: "10 min read",
 				title: "Tech Talk: The Backbone of Cowork's Seamless Experience",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(211, 249, 133)"
 			},
 			{
 				id: 7,
@@ -142,7 +148,8 @@ export const serverData = [
 				trend: "Trending",
 				time: "7 min read",
 				title: "Navigating the Future: Trends in Modern Coworking Spaces",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(166, 232, 246)"
 			},
 			{
 				id: 8,
@@ -150,7 +157,8 @@ export const serverData = [
 				trend: "Productivity",
 				time: "5 min read",
 				title: "Mastering Productivity: Tips from Cowork's High Achievers",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(252, 190, 220)"
 			},
 			{
 				id: 9,
@@ -158,7 +166,17 @@ export const serverData = [
 				trend: "Talk",
 				time: "10 min read",
 				title: "Tech Talk: The Backbone of Cowork's Seamless Experience",
-				more: "https://www.google.com/"
+				more: "https://www.google.com/",
+				style: "rgb(211, 249, 133)"
+			},
+			{
+				id: 10,
+				image: "/images/insights/tables/3.png",
+				trend: "Talk",
+				time: "10 min read",
+				title: "Tech Talk: The Backbone of Cowork's Seamless Experience",
+				more: "https://www.google.com/",
+				style: "rgb(211, 249, 133)"
 			}
 		]
 	}
