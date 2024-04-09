@@ -2,9 +2,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import useFetchData from "../../../hooks/fetchData.jsx";
 
-// import { serverData } from "../../../../server/db.js";
-// import serverData from "../../../../server/db.json"
-
 import img from "/images/insights/img.png"
 
 import "./Insights.scss"
@@ -21,8 +18,8 @@ const Insights = () => {
 	const renderItems = () => {
 		const items = data.map(item => {
 			return(
-				<li 
-					key={item. id} 
+				<motion.li 
+					key={item. id}
 					className="insights__item insights-item"
 					>
 					<div className="insights-item__wrapper">
@@ -40,7 +37,7 @@ const Insights = () => {
 						</h3>
 						<a href={item.more} className="insights-item__more">Read More</a>
 					</div>
-				</li>
+				</motion.li>
 			)
 		})
 		return items;
@@ -71,7 +68,12 @@ const Insights = () => {
 
 	return (
 		<>
-			<section className="insights">
+			<motion.section 
+			className="insights"
+			initial={{y: 100}}
+			whileInView={{y: 0}}
+			transition={{duration: .4}}
+			viewport={{once: true}}>
 				<div className="container">
 					<div className="insights__content">
 						<div className="insights__text">
@@ -92,7 +94,7 @@ const Insights = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</motion.section>
 		</>
 	)
 }

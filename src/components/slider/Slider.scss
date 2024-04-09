@@ -1,15 +1,23 @@
 .swiper {
 	height: 23rem;
-	// width: 22.5rem;
+	width: 100%;
+	display: none !important;
+	@media (max-width: 1280px){
+		display: block !important;
+	}
 }
 
+.swiper-slide {
+
+}
 .swiper-wrapper {
 	align-items: center;
 }
 
 .swiper-button-prev {
-color: transparent;
+	color: transparent;
 }
+
 .swiper-button-next {
 	width: 100%;
 	color: transparent;

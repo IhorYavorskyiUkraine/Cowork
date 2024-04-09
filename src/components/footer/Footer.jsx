@@ -1,3 +1,5 @@
+import {motion} from "framer-motion"
+
 import logo from "/images/footer/logo.png"; 
 
 import "./Footer.scss";
@@ -5,7 +7,12 @@ import "./Footer.scss";
 const Footer = () => {
 	return(
 		<>
-			<footer className="footer">
+			<motion.footer 
+			className="footer"
+			initial={{y: 100}}
+			whileInView={{y: 0}}
+			transition={{duration: .4}}
+			viewport={{once: true}}>
 				<div className="container">
 					<div className="footer-cowork">
 						<div className="footer-cowork__main">
@@ -15,13 +22,15 @@ const Footer = () => {
 							<p className="footer-cowork__label text">Join our newsletter to stay up to date on features and releases.</p>
 							<form 
 								action="submit" 
-								className="footer-cowork__form"
-								placeholder="Enter your email">
+								className="footer-cowork__form">
 								<input 
 									type="text" 
 									className="footer-cowork__input"
-									name="email"/>
-								<button className="footer-cowork__button btn"><span>Subscribe</span></button>
+									name="email"
+									placeholder="Enter your email"/>
+								<div className="footer-cowork__btn">
+									<button className="footer-cowork__button btn"><span>Subscribe</span></button>
+								</div>
 							</form>
 							<p className="footer-cowork__agree text">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
 						</div>
@@ -88,17 +97,23 @@ const Footer = () => {
 					<div className="footer-rights">
 						<div className="footer-rights__columns">
 							<div className="footer-rights__column">
-								<p>© 2024 Cowork. All rights reserved.</p>
+								<p className="footer-rights__rights">© 2024 Cowork. All rights reserved.</p>
 							</div>
-							<div className="footer-rights__column">
-								<div className="footer-rights__item">Privacy Policy</div>
-								<div className="footer-rights__item">Terms of Service</div>
-								<div className="footer-rights__item">Cookies Settings</div>
-							</div>
+								<ul className="footer-rights__items">
+									<li className="footer-rights__item">
+										<a href="/">Privacy Policy</a>
+									</li><a href="/"></a>
+									<li className="footer-rights__item">
+										<a href="/">Terms of Service</a>
+									</li>
+									<li className="footer-rights__item">
+										<a href="/">Cookies Settings</a>
+									</li>
+								</ul>
 						</div>
 					</div>
 				</div>
-			</footer>
+			</motion.footer>
 		</>
 	)
 }

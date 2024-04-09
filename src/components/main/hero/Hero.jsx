@@ -11,7 +11,7 @@ const Hero = () => {
 				<div className="container">
 					<div className="hero__content">
 						<motion.div 
-						className="hero__column"
+						className="hero__left"
 						initial={{x: -100}}
 						animate={{x: 0}}
 						transition={{duration: .4}}>
@@ -22,7 +22,7 @@ const Hero = () => {
 							</button>
 						</motion.div>
 						<motion.div 
-							className="hero__column"
+							className="hero__right"
 							initial={{x: 100}}
 							animate={{x: 0}}
 							transition={{duration: .4}}>

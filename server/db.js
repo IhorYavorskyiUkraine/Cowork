@@ -56,35 +56,40 @@ export const serverData = [
 				name: "Liam Brown",
 				image: "images/hearClient/1.png",
 				text: "'The 24/7 access and secure facilities have been incredibly convenient for my team's flexible schedules. We love the coworking space!",
-				position: "Software Engineer, TechStartup Innovations"
+				position: "Software Engineer, TechStartup Innovations",
+				style: "rgb(211, 249, 133)"
 			},
 			{
 				id: 2,
 				name: "Michael Rodriguez",
 				image: "images/hearClient/2.png",
 				text: "'The aesthetics of Cowork are inspiring. The attention to detail in the design creates an atmosphere that sparks creativity. It's a place where ideas flow effortlessly, and collaboration happens organically.'",
-				position: " Creative Director, DesignCraft Studio"
+				position: " Creative Director, DesignCraft Studio",
+				style: "rgb(241, 241, 241)"
 			},
 			{
 				id: 3,
 				name: "Michael Thompson",
 				image: "images/hearClient/3.png",
 				text: "'As a freelance designer, I was getting tired of working from home or coffee shops. The coworking space has provided me with a productive and professional environment to focus on my work.'",
-				position: "Graphic Designer, DesignCo"
+				position: "Graphic Designer, DesignCo",
+				style: "rgb(166, 232, 246)"
 			},
 			{
 				id: 4,
 				name: "David Wilson",
 				image: "images/hearClient/4.png",
 				text: "'The coworking space has been a wonderful resource for my team. The open floor plan and dedicated private offices allow us to collaborate and concentrate as needed.'",
-				position: "Project Manager, SoftwareSolutions LLC"
+				position: "Project Manager, SoftwareSolutions LLC",
+				style: "rgb(252, 190, 220)"
 			},
 			{
 				id: 5,
 				name: "Alex Nguyen",
 				image: "images/hearClient/5.png",
 				text: "'The flexible membership options and amenities like high-speed internet, printers, and meeting rooms have made this coworking space a perfect fit for my small business.'",
-				position: "Marketing Consultant, Maverick Marketing"
+				position: "Marketing Consultant, Maverick Marketing",
+				style: "rgb(251, 200, 153)"
 			}
 		],
 		"tables": [

@@ -11,7 +11,7 @@ const useFetchData= () => {
 			console.error('Error', error);
 		}
 	}, []);
-	
+
 	return {fetchTables};
 }
 

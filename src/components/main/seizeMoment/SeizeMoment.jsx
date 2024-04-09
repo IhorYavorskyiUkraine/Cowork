@@ -1,3 +1,4 @@
+import {motion} from "framer-motion"
 
 import img from "/images/seizeMoment/img.png"
 
@@ -6,7 +7,12 @@ import "./SeizeMoment.scss"
 const SeizeMoment = () => {
 	return(
 		<>
-			<section className="seizeMoment">
+			<motion.section 
+			className="seizeMoment"
+			initial={{y: 100}}
+			whileInView={{y: 0}}
+			transition={{duration: .4}}
+			viewport={{once: true}}>
 				<div className="container">
 					<div className="seizeMoment__content">
 						<div className="seizeMoment__title title">Seize 
@@ -16,7 +22,7 @@ const SeizeMoment = () => {
 						<button className="seizeMoment__button btn"><span>Claim Your Spot</span></button>
 					</div>
 				</div>
-			</section>
+			</motion.section>
 		</>
 	)
 }

@@ -20,6 +20,7 @@ const Slider = () => {
 					<li
 						key={item. id} 
 						className="hearClients__item hearClients-item"
+						style={{background: `${item.style}`}}
 						>
 						<div className="hearClients-item__wrapper">
 							<div className="hearClients-item__image">

@@ -55,7 +55,7 @@ const HearClients = () => {
 							<h2 className="hearClients__title title">Hear It from Our Clients</h2>
 						</motion.div>
 						{renderItems()}
-						{/* <Slider /> */}
+						<Slider />
 					</div>
 				</div>
 			</section>

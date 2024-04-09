@@ -126,6 +126,7 @@ $second-family: "NeueRegradeBold", sans-serif;
 	&__login {
 		background: #fff;
 		transition: all .3s;
+		cursor: pointer;
 		&:hover {
 			background: #f1f1f1;
 		}
@@ -135,6 +136,7 @@ $second-family: "NeueRegradeBold", sans-serif;
 	}
 
 	&__signup {
+		cursor: pointer;
 		background: #000;
 		display: inline-flex;
 		transition: all .3s;

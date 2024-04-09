@@ -12,7 +12,7 @@ import "./Header.scss"
 const Header = () => {
 
 	const [lock, setLock] = useState(false);
-
+	
 	const handleLock = () => {
 		setLock(!lock)
 		lock ? document.body.classList.add('lock') : document.body.classList.remove('lock');
@@ -33,8 +33,8 @@ const Header = () => {
 				<a id="contact" className="menu-item" href="/contact">Blog</a>
 				<a id="settings" className="menu-item" href="">Events</a>
 				<div className="bm-btns">
-					<a to="" className="bm-btns__singup"><span>Sign Up</span></a>
-					<a to="" className="bm-btns__login"><span>Log In</span></a>
+					<a to="/" className="bm-btns__singup"><span>Sign Up</span></a>
+					<a to="/" className="bm-btns__login"><span>Log In</span></a>
 				</div>
 			</Menu>
 			<motion.header 

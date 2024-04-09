@@ -15,19 +15,28 @@ $humble-black-hover: #3a3a3a;
 	}
 
 	&__title {
-		font-size: 96px;
+		font-size: 6rem !important;
 		font-weight: 700;
 		color: $humble-black;
 		font-family: $second-family;
 		margin-bottom: 1.5rem;
 		line-height: 110%;
-		@media (max-width: 771px){
+		@media (max-width: 991px){
 			font-size: 3rem !important;
 		}
 		span {
 			padding: 0rem 1.5rem;
 			display: inline-flex;
 			margin: 0 auto;
+			img {
+				width: 15rem;
+				height: 6rem;
+				margin: 0 auto;
+				@media (max-width: 9911px){
+					width: 10rem;
+					height: 3.625rem;
+				}
+			}
 		}
 	}
 
