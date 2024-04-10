@@ -83,12 +83,12 @@
 		},
 		{
 			"id": 10,
-			"image": "/images/insights/tables/3.png",
-			"trend": "Talk",
-			"time": "10 min read",
-			"title": "Tech Talk: The Backbone of Cowork's Seamless Experience",
+			"image": "/images/insights/tables/1.png",
+			"trend": "Trending",
+			"time": "7 min read",
+			"title": "Navigating the Future: Trends in Modern Coworking Spaces",
 			"more": "https://www.google.com/",
-			"style": "rgb(211, 249, 133)"
+			"style": "rgb(166, 232, 246)"
 		}
 	]
 }

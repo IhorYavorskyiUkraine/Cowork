@@ -4,11 +4,12 @@ import { Navigation} from 'swiper/modules';
 import { useState, useEffect } from "react";
 import { serverData } from "../../../server/db.js"
 
+import prev from "/images/slider/1.png"
+import next from "/images/slider/1.png"
+
 import './Slider.scss'
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 const Slider = () => {
 	const [data, setData] = useState([]);
@@ -19,16 +20,16 @@ const Slider = () => {
 				<SwiperSlide key={item.id}>
 					<li
 						key={item. id} 
-						className="hearClients__item hearClients-item"
+						className="slider__item slider-item"
 						style={{background: `${item.style}`}}
 						>
-						<div className="hearClients-item__wrapper">
-							<div className="hearClients-item__image">
+						<div className="slider-item__wrapper">
+							<div className="slider-item__image">
 								<img src={`${item.image}`} alt="why choose item"/>
 							</div>
-							<p className="hearClients-item__text">{item.text}</p>
-							<h3 className="hearClients-item__name">{item.name}</h3>
-							<p className="hearClients-item__position">{item.position}</p>
+							<p className="slider-item__text">{item.text}</p>
+							<h3 className="slider-item__name">{item.name}</h3>
+							<p className="slider-item__position">{item.position}</p>
 						</div>
 					</li>
 				</SwiperSlide>
@@ -40,14 +41,24 @@ const Slider = () => {
 	useEffect(() => {
 		setData(serverData[0].hearClients);
 	}, []);
+
   return (
     <Swiper
 	 	modules={[Navigation]}
       spaceBetween={0}
 		slidesPerView={1}
-		navigation
+		navigation={{
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		}}
     >
 		{renderItems()}
+		<div className="swiper-button-prev">
+			<img src={prev} alt="prev"/>
+		</div>
+		<div className="swiper-button-next">
+			<img src={next} alt="next"/>
+		</div>
     </Swiper>
   );
 };

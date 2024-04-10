@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import useFetchData from "../../../hooks/fetchData.jsx";
 
+import { serverData } from "../../../../server/db.js"
+
 import img from "/images/insights/img.png"
 
 import "./Insights.scss"
@@ -10,7 +12,7 @@ const Insights = () => {
 
 	const [data, setData] = useState([]);
 	const [loading, setLoading] = useState(false);
-	const [index, setIndex] = useState(2);
+	const [index, setIndex] = useState(3);
 	const [dataEnded, setDataEnded] = useState(false);
 
 	const{fetchTables} = useFetchData();
@@ -21,6 +23,10 @@ const Insights = () => {
 				<motion.li 
 					key={item. id}
 					className="insights__item insights-item"
+					initial={{y: 100}}
+					whileInView={{y: 0}}
+					transition={{duration: .4}}
+					viewport={{once: true}}
 					>
 					<div className="insights-item__wrapper">
 						<div className="insights-item__image">
@@ -44,10 +50,15 @@ const Insights = () => {
 	}	
 
 	const onRequest = () => {
-		onDataLoading();
+		if(index > 10) {
+			setDataEnded(true);
+		}
+		
+		dataEnded ? setLoading(false) : onDataLoading();
+
 		fetchTables(index)
-			.then(data => setData(data));
-		onDataLoaded();
+			.then(data => setData(data))
+			.then(onDataLoaded());
 	}
 
 	const onDataLoading = () => {
@@ -55,7 +66,6 @@ const Insights = () => {
 	}
 
 	const onDataLoaded = () => {
-		
 		setLoading(false);
 		setIndex(index + 3);
 	}
@@ -88,7 +98,8 @@ const Insights = () => {
 							<button 
 								className={clazz}
 								onClick={onRequest}
-								disabled={loading}>
+								disabled={loading}
+								style={dataEnded ? {display: "none"} : null}>
 								<span>View All</span>
 							</button>
 						</div>

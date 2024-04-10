@@ -42,23 +42,23 @@ const HearClients = () => {
 
 	return(
 		<>
-			<section className="hearClients">
+			<motion.section 
+			className="hearClients"
+			initial={{y: 100}}
+			whileInView={{y: 0}}
+			transition={{duration: .4}}
+			viewport={{once: true}}>
 				<div className="container">
 					<div className="hearClients__content">
-						<motion.div 
-							className="hearClients__text"
-							initial={{y: 100}}
-							whileInView={{y: 0}}
-							transition={{duration: .4}}
-							viewport={{once: true}}>
+						<div className="hearClients__text">
 							<p className="hearClients__label label">COWORK IN WORDS</p>
 							<h2 className="hearClients__title title">Hear It from Our Clients</h2>
-						</motion.div>
+						</div>
 						{renderItems()}
 						<Slider />
 					</div>
 				</div>
-			</section>
+			</motion.section>
 		</>
 	)
 }
