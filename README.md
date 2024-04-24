@@ -24,6 +24,7 @@
 - Adaptive and responsive design.
 - Semantic html.
 - Browser Compatibility.
+- Animations
 ### Tech Stack :hammer_and_wrench:
 <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" alt="React" title="React" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/reactrouter/reactrouter-original-wordmark.svg" alt="React Router" title="React Router" width="40" height="40"/>&nbsp;
