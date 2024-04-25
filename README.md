@@ -24,7 +24,7 @@
 - Adaptive and responsive design.
 - Semantic html.
 - Browser Compatibility.
-- Animations
+- Animations.
 ### Tech Stack :hammer_and_wrench:
 <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" alt="React" title="React" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/reactrouter/reactrouter-original-wordmark.svg" alt="React Router" title="React Router" width="40" height="40"/>&nbsp;
@@ -38,4 +38,6 @@
 - Replace the react-burger-menu library with a custom burger menu. :x:
 - Create a design for the About, Pricing, Blog and Events pages. :x:
 - Сhange the item loading logic. :x:
+- Add loading spinner. :x:
+- Add Error Boundaries :x:
 - Сlean up the code. :x:
