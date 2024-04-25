@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-import { serverData } from "../../../../server/db.js"
+//JS FILE
+// import { serverData } from "../../../../server/db.js";
+
+// API REQUEST
+import {useFetchData, useLoading} from "../../../hooks/hooks.jsx";
 
 import img from "/images/whyChoose/title.png"
 
@@ -10,6 +14,9 @@ import "./WhyChoose.scss"
 const WhyChoose = () => {
 
 	const [data, setData] = useState([]);
+	const {loading, startLoading, stopLoading} = useLoading();
+
+	const{fetchTWhyChoose} = useFetchData();
 
 	const renderItems = () => {
 		const items = data.map(item => {
@@ -20,7 +27,8 @@ const WhyChoose = () => {
 					initial={{y: 100}}
 					whileInView={{y: 0}}
 					transition={{duration: .2 * item.id}}
-					viewport={{once: true}}>
+					viewport={{once: true}}
+				>
 					<div className="whychoose-item__wrapper">
 						<div className="whychoose-item__image">
 							<img src={`${item.image}`} alt="why choose item"/>
@@ -30,12 +38,30 @@ const WhyChoose = () => {
 					</div>
 				</motion.li>
 			)
-		})
-		return items;
+		});
+
+		return <ul className="whychoose__list">{items}</ul>;
+	}
+	
+	//FROM JS FILE
+	// useEffect(() => {
+	// 	startLoading();
+	// 	setData(serverData[0].whyChoose);
+	// 	stopLoading();
+	// }, []);
+
+	//API REQUEST
+	const onRequest = () => {
+		startLoading();
+		setTimeout(() => {
+			fetchTWhyChoose()
+				.then(data => setData(data))
+				.then(stopLoading());
+		}, 300);
 	}
 
 	useEffect(() => {
-		setData(serverData[0].whyChoose);
+		onRequest();
 	}, []);
 
 	return(
@@ -44,14 +70,23 @@ const WhyChoose = () => {
 				<div className="container">
 					<div className="whychoose__content">
 						<motion.h2 
-						className="whychoose__title title"
-						initial={{y: 100}}
-						whileInView={{y: 0}}
-						transition={{duration: .4}}
-						viewport={{once: true}}>Why Choose <span><img src={img} alt="img"/></span> Cowork?</motion.h2>
-						<div className="whychoose__list">
-							{renderItems()}
-						</div>
+							className="whychoose__title title"
+							initial={{y: 100}}
+							whileInView={{y: 0}}
+							transition={{duration: .4}}
+							viewport={{once: true}}
+						>
+						Why Choose <span><img src={img} alt="img"/></span> Cowork?
+						</motion.h2>
+						{loading ? 	<motion.div 
+											className="loader"
+											initial={{y: 100}}
+											whileInView={{y: 0}}
+											transition={{duration: .4}}
+											viewport={{once: true}}
+										></motion.div>
+										: 
+										renderItems()}
 					</div>
 				</div>
 			</section>

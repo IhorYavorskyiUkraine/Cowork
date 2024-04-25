@@ -12,11 +12,12 @@ const ExploreCowork = () => {
 				<div className="container">
 					<div className="exploreCowork__content">
 						<motion.div 
-						className="exploreCowork__textwrapper"
-						initial={{y: 100}}
-						whileInView={{y: 0}}
-						transition={{duration: .4}}
-						viewport={{once: true}}>
+							className="exploreCowork__textwrapper"
+							initial={{y: 100}}
+							whileInView={{y: 0}}
+							transition={{duration: .4}}
+							viewport={{once: true}}
+						>
 							<p className="exploreCowork__label label">A Virtual Tour</p>
 							<h2 className="exploreCowork__title title">Explore Cowork Through Our <br />
 								<img src={img} alt="image"/> Lens</h2>
@@ -30,7 +31,8 @@ const ExploreCowork = () => {
 							initial={{y: 100}}
 							whileInView={{y: 0}}
 							transition={{duration: .4}}
-							viewport={{once: true}}>
+							viewport={{once: true}}
+						>
 							<video controls src={trailer}></video>
 						</motion.div>
 					</div>

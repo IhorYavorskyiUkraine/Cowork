@@ -3,10 +3,10 @@ $font-family: "GeneraSansRegular", sans-serif;
 
 .trusted {
 	padding: 5.0625rem 0rem;
-	@media (max-width: 991px){
+	@media (max-width: 61.9375rem){
 		padding: 3rem 0rem;
 	}
-	@media (max-width: 771px){
+	@media (max-width: 48.1875rem){
 		padding: 3rem 0rem;
 	}
 	&__content {
@@ -26,12 +26,6 @@ $font-family: "GeneraSansRegular", sans-serif;
 	}
 
 	&__item {
-	}
-}
-
-.trusted-item {
-
-	&__image {
 	}
 }
 

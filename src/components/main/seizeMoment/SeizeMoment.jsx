@@ -8,11 +8,12 @@ const SeizeMoment = () => {
 	return(
 		<>
 			<motion.section 
-			className="seizeMoment"
-			initial={{y: 100}}
-			whileInView={{y: 0}}
-			transition={{duration: .4}}
-			viewport={{once: true}}>
+				className="seizeMoment"
+				initial={{y: 100}}
+				whileInView={{y: 0}}
+				transition={{duration: .4}}
+				viewport={{once: true}}
+			>
 				<div className="container">
 					<div className="seizeMoment__content">
 						<div className="seizeMoment__title title">Seize 

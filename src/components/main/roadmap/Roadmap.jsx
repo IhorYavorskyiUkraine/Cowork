@@ -11,11 +11,12 @@ const RoadMap = () => {
 				<div className="container">
 					<div className="roadmap__content">
 						<motion.div 
-						className="roadmap__column"
-						initial={{x: -100}}
-						whileInView={{x: 0}}
-						transition={{duration: .4}}
-						viewport={{once: true}}>
+							className="roadmap__column"
+							initial={{x: -100}}
+							whileInView={{x: 0}}
+							transition={{duration: .4}}
+							viewport={{once: true}}
+						>
 							<div className="roadmap__text">
 								<div className="roadmap__label label">Frequently Asked Questions</div>
 								<div className="roadmap__title title">Your Roadmap to Coworking Clarity</div>
@@ -23,11 +24,12 @@ const RoadMap = () => {
 							</div>
 						</motion.div>
 						<motion.div 
-						className="roadmap__column"
-						initial={{x: 100}}
-						whileInView={{x: 0}}
-						transition={{duration: .4}}
-						viewport={{once: true}}>
+							className="roadmap__column"
+							initial={{x: 100}}
+							whileInView={{x: 0}}
+							transition={{duration: .4}}
+							viewport={{once: true}}
+						>
 							<AccordionComponent/>
 						</motion.div>
 					</div>

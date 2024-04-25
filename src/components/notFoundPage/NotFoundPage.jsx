@@ -10,9 +10,11 @@ const NotFoundPage = () => {
 		<div className="container">
 			<Link 
 				to="/"
-				className="back">
-				<img src={back} className="back-img" alt="back" />
-				Home</Link>
+				className="back"
+			>
+			<img src={back} className="back-img" alt="back"/>
+			Home
+			</Link>
 			<div className="error">Page not found</div>
 		</div>
 	</>

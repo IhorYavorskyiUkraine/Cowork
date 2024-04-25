@@ -1,4 +1,5 @@
 import {motion} from "framer-motion"
+import { Link } from "react-router-dom";
 
 import logo from "/images/footer/logo.png"; 
 
@@ -8,11 +9,12 @@ const Footer = () => {
 	return(
 		<>
 			<motion.footer 
-			className="footer"
-			initial={{y: 100}}
-			whileInView={{y: 0}}
-			transition={{duration: .4}}
-			viewport={{once: true}}>
+				className="footer"
+				initial={{y: 100}}
+				whileInView={{y: 0}}
+				transition={{duration: .4}}
+				viewport={{once: true}}
+			>
 				<div className="container">
 					<div className="footer-cowork">
 						<div className="footer-cowork__main">
@@ -39,19 +41,19 @@ const Footer = () => {
 								<div className="footer-cowork__title">Explore More</div>
 								<ul className="footer-cowork__links">
 									<li className="footer-cowork__link">
-										<a href="/">Home</a>
+										<Link to="/">Home</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">About</a>
+										<Link to="/">About</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">Pricing</a>
+										<Link to="/">Pricing</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">Blog</a>
+										<Link to="/">Blog</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">Events</a>
+										<Link to="/">Events</Link>
 									</li>
 								</ul>
 							</div>
@@ -59,16 +61,16 @@ const Footer = () => {
 								<div className="footer-cowork__title">Stay Connected</div>
 								<ul className="footer-cowork__links">
 									<li className="footer-cowork__link">
-										<a href="/">Subscribe</a>
+										<Link to="/">Subscribe</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">Member Stories</a>
+										<Link to="/">Member Stories</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">Locations</a>
+										<Link to="/">Locations</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">Write for Us</a>
+										<Link to="/">Write for Us</Link>
 									</li>
 								</ul>
 							</div>
@@ -76,19 +78,19 @@ const Footer = () => {
 								<div className="footer-cowork__title">Follow Us</div>
 								<ul className="footer-cowork__links">
 									<li className="footer-cowork__link">
-										<a href="/">Facebook</a>
+										<Link to="/">Facebook</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">Instagram</a>
+										<Link to="/">Instagram</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">X</a>
+										<Link to="/">X</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">LinkedIn</a>
+										<Link to="/">LinkedIn</Link>
 									</li>
 									<li className="footer-cowork__link">
-										<a href="/">Youtube</a>
+										<Link to="/">Youtube</Link>
 									</li>
 								</ul>
 							</div>
@@ -99,17 +101,17 @@ const Footer = () => {
 							<div className="footer-rights__column">
 								<p className="footer-rights__rights">© 2024 Cowork. All rights reserved.</p>
 							</div>
-								<ul className="footer-rights__items">
-									<li className="footer-rights__item">
-										<a href="/">Privacy Policy</a>
-									</li><a href="/"></a>
-									<li className="footer-rights__item">
-										<a href="/">Terms of Service</a>
-									</li>
-									<li className="footer-rights__item">
-										<a href="/">Cookies Settings</a>
-									</li>
-								</ul>
+							<ul className="footer-rights__items">
+								<li className="footer-rights__item">
+									<Link to="/">Privacy Policy</Link>
+								</li><a href="/"></a>
+								<li className="footer-rights__item">
+									<Link to="/">Terms of Service</Link>
+								</li>
+								<li className="footer-rights__item">
+									<Link to="/">Cookies Settings</Link>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

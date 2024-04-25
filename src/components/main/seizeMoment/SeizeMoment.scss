@@ -4,10 +4,10 @@ $humble-black-hover: #3a3a3a;
 
 .seizeMoment {
 	padding: 7rem 0rem;
-	@media (max-width: 991px){
+	@media (max-width: 61.9375rem){
 		padding: 3rem 0rem;
 	}
-	@media (max-width: 771px){
+	@media (max-width: 48.1875rem){
 		padding: 4rem 0rem;
 	}
 	&__content {
@@ -21,7 +21,7 @@ $humble-black-hover: #3a3a3a;
 		font-family: $second-family;
 		margin-bottom: 1.5rem;
 		line-height: 110%;
-		@media (max-width: 991px){
+		@media (max-width: 61.9375rem){
 			font-size: 3rem !important;
 		}
 		span {
@@ -32,9 +32,13 @@ $humble-black-hover: #3a3a3a;
 				width: 15rem;
 				height: 6rem;
 				margin: 0 auto;
-				@media (max-width: 9911px){
+				@media (max-width: 61.9375rem){
 					width: 10rem;
 					height: 3.625rem;
+				}
+				@media (max-width: 48.249rem){
+					width: 7rem;
+					height: 2.5rem;
 				}
 			}
 		}

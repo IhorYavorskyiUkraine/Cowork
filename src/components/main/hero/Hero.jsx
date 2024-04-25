@@ -11,10 +11,11 @@ const Hero = () => {
 				<div className="container">
 					<div className="hero__content">
 						<motion.div 
-						className="hero__left"
-						initial={{x: -100}}
-						animate={{x: 0}}
-						transition={{duration: .4}}>
+							className="hero__left"
+							initial={{x: -100}}
+							animate={{x: 0}}
+							transition={{duration: .4}}
+						>
 							<h1 className="hero__title">Elevate Your Workspace with <span>Cowork</span></h1>
 							<p className="hero__text text">Welcome to Cowork – where innovation meets collaboration in the heart  of productivity! Unleash 🚀 your potential in our thoughtfully designed coworking spaces, tailored to inspire creativity and foster connections.</p>
 							<button type="button" className="hero__button btn">
@@ -25,7 +26,8 @@ const Hero = () => {
 							className="hero__right"
 							initial={{x: 100}}
 							animate={{x: 0}}
-							transition={{duration: .4}}>
+							transition={{duration: .4}}
+						>
 							<div className="hero__image">
 								<img src={img} alt="image"/>
 							</div>

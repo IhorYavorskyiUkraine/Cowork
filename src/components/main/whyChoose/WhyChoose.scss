@@ -2,10 +2,10 @@ $second-family: "NeueRegradeBold", sans-serif;
 
 .whychoose {
 	padding: 7rem 0rem;
-	@media (max-width: 991px){
+	@media (max-width: 61.9375rem){
 		padding: 3rem 0rem;
 	}
-	@media (max-width: 771px){
+	@media (max-width: 48.1875rem){
 		padding: 4rem 0rem;
 	}
 	&__content {
@@ -21,11 +21,11 @@ $second-family: "NeueRegradeBold", sans-serif;
 		span {
 			padding: 0px 1rem;
 			align-self: center;
-			@media (max-width: 771px){
+			@media (max-width: 48.1875rem){
 				padding: 0rem;
 			}
 		}
-		@media (max-width: 771px){
+		@media (max-width: 48.1875rem){
 			display: block;
 			margin-bottom: 2.5rem;
 		}
@@ -37,7 +37,7 @@ $second-family: "NeueRegradeBold", sans-serif;
 		gap: 3rem;
 		justify-content: center;
 		align-items: center;
-		@media (max-width: 771px){
+		@media (max-width: 48.1875rem){
 			row-gap: 2rem; 
 		}
 	}
@@ -64,7 +64,7 @@ $second-family: "NeueRegradeBold", sans-serif;
 		font-size: 1.5rem;
 		font-family: $second-family;
 		margin-bottom: 1.5rem;
-		@media (max-width: 771px){
+		@media (max-width: 48.1875rem){
 			font-size: 1rem;
 		}
 	}

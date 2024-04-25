@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import useFetchData from "../../../hooks/fetchData.jsx";
-
-import { serverData } from "../../../../server/db.js"
+//JS FILE
+// import { serverData } from "../../../../server/db.js"
+// API REQUEST
+import {useFetchData, useLoading} from "../../../hooks/hooks.jsx";
 
 import img from "/images/insights/img.png"
 
@@ -11,10 +12,10 @@ import "./Insights.scss"
 const Insights = () => {
 
 	const [data, setData] = useState([]);
-	const [loading, setLoading] = useState(false);
-	const [index, setIndex] = useState(3);
+	const [index, setIndex] = useState(2);
 	const [dataEnded, setDataEnded] = useState(false);
-
+	const {loading, startLoading, stopLoading} = useLoading();
+	
 	const{fetchTables} = useFetchData();
 
 	const renderItems = () => {
@@ -25,9 +26,9 @@ const Insights = () => {
 					className="insights__item insights-item"
 					initial={{y: 100}}
 					whileInView={{y: 0}}
-					transition={{duration: .4}}
+					transition={{duration: .3}}
 					viewport={{once: true}}
-					>
+				>
 					<div className="insights-item__wrapper">
 						<div className="insights-item__image">
 							<a href="/">
@@ -50,24 +51,17 @@ const Insights = () => {
 	}	
 
 	const onRequest = () => {
+		startLoading();
 		if(index > 10) {
 			setDataEnded(true);
 		}
 		
-		dataEnded ? setLoading(false) : onDataLoading();
+		dataEnded ? stopLoading() : startLoading();
 
 		fetchTables(index)
 			.then(data => setData(data))
-			.then(onDataLoaded());
-	}
-
-	const onDataLoading = () => {
-		setLoading(true);
-	}
-
-	const onDataLoaded = () => {
-		setLoading(false);
-		setIndex(index + 3);
+			.then(stopLoading())
+			.then(setIndex(index + 3));
 	}
 
 	useEffect(() => {
@@ -79,11 +73,12 @@ const Insights = () => {
 	return (
 		<>
 			<motion.section 
-			className="insights"
-			initial={{y: 100}}
-			whileInView={{y: 0}}
-			transition={{duration: .4}}
-			viewport={{once: true}}>
+				className="insights"
+				initial={{y: 100}}
+				whileInView={{y: 0}}
+				transition={{duration: .4}}
+				viewport={{once: true}}
+			>
 				<div className="container">
 					<div className="insights__content">
 						<div className="insights__text">
@@ -99,7 +94,8 @@ const Insights = () => {
 								className={clazz}
 								onClick={onRequest}
 								disabled={loading}
-								style={dataEnded ? {display: "none"} : null}>
+								style={dataEnded ? {display: "none"} : null}
+							>
 								<span>View All</span>
 							</button>
 						</div>

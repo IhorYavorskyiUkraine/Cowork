@@ -1,3 +1,5 @@
+import { ErrorBoundary } from "react-error-boundary";
+
 import Header from "../header/Header";
 import Hero from "./hero/Hero";
 import Trusted from "./trusted/Trusted"
@@ -16,14 +18,22 @@ const Main = () => {
 			<Header/>
 			<main className="main">
 				<Hero/>
-				<Trusted/>
-				<WhyChoose/>
+				<ErrorBoundary fallback={<img className="errorBoundary" src="https://media1.tenor.com/m/ZvLReph5qCIAAAAC/skill-issue.gif"/>}>
+					<Trusted/>
+				</ErrorBoundary>
+				<ErrorBoundary fallback={<img className="errorBoundary" src="https://media1.tenor.com/m/ZvLReph5qCIAAAAC/skill-issue.gif"/>}>
+					<WhyChoose/>
+				</ErrorBoundary>
 				<ExploreCowork/>
 				<Statistics/>
-				<HearClients/>
+				<ErrorBoundary fallback={<img className="errorBoundary" src="https://media1.tenor.com/m/ZvLReph5qCIAAAAC/skill-issue.gif"/>}>
+					<HearClients/>
+				</ErrorBoundary>
 				<RoadMap/>
 				<SeizeMoment/>
-				<Insights/>
+				<ErrorBoundary fallback={<img className="errorBoundary" src="https://media1.tenor.com/m/ZvLReph5qCIAAAAC/skill-issue.gif"/>}>
+					<Insights/>
+				</ErrorBoundary>
 			</main>
 			<Footer/>
 		</div>

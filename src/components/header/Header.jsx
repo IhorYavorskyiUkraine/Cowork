@@ -1,51 +1,21 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { slide as Menu } from 'react-burger-menu'
 import { motion } from 'framer-motion';
 
 import logo from "/images/header/logo.png";
-import burgerLogo from "/images/header/burgerLogo.png";
-import burger from "/images/header/burger.png";
+
+import BurgerMenu from "./burgerMenu/BurgerMenu";
 
 import "./Header.scss"
 
 const Header = () => {
-
-	const [lock, setLock] = useState(false);
-	
-	const handleLock = () => {
-		setLock(!lock)
-		lock ? document.body.classList.add('lock') : document.body.classList.remove('lock');
-	}
-
 	return(
 		<>
-			<div className="burger">
-				<Menu
-				customBurgerIcon={ <img src={burger} /> }
-				onStateChange={handleLock} 
-				right 
-				
-				width={'100%'}>
-					<div className="menu__logo_w">
-						<img src={burgerLogo} alt="logo"/>
-					</div>
-					<Link id="about" className="menu-item" to="/about">About</Link>
-					<Link id="pricing" className="menu-item" to="/pricing">Pricing</Link>
-					<Link id="blog" className="menu-item" to="/blog">Blog</Link>
-					<Link id="events" className="menu-item" to="/events">Events</Link>
-					<div className="bm-btns">
-						<Link to="/" className="bm-btns__singup"><span>Sign Up</span></Link>
-						<Link to="/" className="bm-btns__login"><span>Log In</span></Link>
-					</div>
-				</Menu>
-			</div>
 			<motion.header 
 				className="header"
 				initial={{opacity: 0}}
 				animate={{opacity: 1}}
 				transition={{duration: .4}}
-				>
+			>
 				<div className="container">
 					<div className="header__menu menu">
 						<Link to="/" className="menu__icon">
@@ -67,9 +37,12 @@ const Header = () => {
 								</li>
 							</ul>
 						</nav>
-						<div className="menu__log log">
-							<a to="/" className="log__login btn"><span>Log In</span></a>
-							<a to="/" className="log__signup btn"><span>Sign Up</span></a>
+						<div className="menu__buttons buttons">
+							<div className="buttons__links">
+								<Link to="/" className="buttons__login btn"><span>Log In</span></Link>
+								<Link to="/" className="buttons__signup btn"><span>Sign Up</span></Link>
+							</div>
+							<BurgerMenu/>
 						</div>
 					</div>
 				</div>

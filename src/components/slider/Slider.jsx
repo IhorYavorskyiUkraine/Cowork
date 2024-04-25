@@ -22,7 +22,7 @@ const Slider = () => {
 						key={item. id} 
 						className="slider__item slider-item"
 						style={{background: `${item.style}`}}
-						>
+					>
 						<div className="slider-item__wrapper">
 							<div className="slider-item__image">
 								<img src={`${item.image}`} alt="why choose item"/>
@@ -42,25 +42,25 @@ const Slider = () => {
 		setData(serverData[0].hearClients);
 	}, []);
 
-  return (
-    <Swiper
-	 	modules={[Navigation]}
-      spaceBetween={0}
+	return (
+		<Swiper
+		modules={[Navigation]}
+		spaceBetween={0}
 		slidesPerView={1}
 		navigation={{
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		}}
-    >
-		{renderItems()}
-		<div className="swiper-button-prev">
-			<img src={prev} alt="prev"/>
-		</div>
-		<div className="swiper-button-next">
-			<img src={next} alt="next"/>
-		</div>
-    </Swiper>
-  );
+		>
+			{renderItems()}
+			<div className="swiper-button-prev">
+				<img src={prev} alt="prev"/>
+			</div>
+			<div className="swiper-button-next">
+				<img src={next} alt="next"/>
+			</div>
+		</Swiper>
+	);
 };
 
 export default Slider;

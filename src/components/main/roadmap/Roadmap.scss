@@ -1,19 +1,19 @@
 .roadmap {
 	padding: 12rem 0rem;
-	@media (max-width: 991px){
+	@media (max-width: 61.9375rem){
 		padding: 3rem 0rem;
 	}
-	@media (max-width: 771px){
+	@media (max-width: 48.1875rem){
 		padding: 4rem 0rem;
 	}
 	&__content {
 		display: grid;
 		grid-template-columns: 33.1rem 1fr;
 		column-gap: 2rem;
-		@media (max-width: 1280px){
+		@media (max-width: 80rem){
 			grid-template-columns: 26.25rem 1fr;
 		}
-		@media (max-width: 991px){
+		@media (max-width: 61.9375rem){
 			grid-template-columns: auto;
 			row-gap: 1rem;
 		}
@@ -23,7 +23,7 @@
 	}
 
 	&__text {
-		@media (max-width: 991px){
+		@media (max-width: 61.9375rem){
 			text-align: center;
 		}
 	}
@@ -39,7 +39,7 @@
 
 	&__p {
 		max-width: 24.375rem;
-		@media (max-width: 991px){
+		@media (max-width: 61.9375rem){
 			margin: 0 auto;
 		}
 	}

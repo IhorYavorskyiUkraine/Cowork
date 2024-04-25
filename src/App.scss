@@ -128,20 +128,20 @@ $humble-black-hover: #3a3a3a;
 	img {
 		width: 11.25rem;
 		height: 3.625rem;
-		@media (max-width: 771px){
+		@media (max-width: 48.1875rem){
 			width: 7.5rem;
 			height: 2.1875rem;
 		}
 	}
-	@media (max-width: 771px){
+	@media (max-width: 48.1875rem){
 		font-size: 1.5rem;
 	}
 }
 
 .container {
-	max-width: 1326px;
+	max-width: 82.875rem;
 	margin: 0 auto;
-	padding: 0px 7px;
+	padding: 0rem .4375rem;
 }
 
 .text {
@@ -152,11 +152,29 @@ $humble-black-hover: #3a3a3a;
 
 .btn {
 	padding: .75rem 1.5rem;
-	border: 1px solid $humble-black;
-	border-radius: 42px;
+	border: .0625rem solid $humble-black;
+	border-radius: 2.625rem;
 	span {
 		font-weight: 600;
 		line-height: 150%;	
 		$font-family: "General Sans Variable", sans-serif;	
 	}
 }
+
+.errorBoundary {
+	display: flex;
+	margin: 0 auto;
+}
+
+.loader {
+	width: 3.125rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	border: .5rem solid;
+	border-color: $humble-black transparent;
+	animation: l1 1s infinite;
+	display: flex;
+	margin: 0 auto;
+}
+
+@keyframes l1 {to{transform: rotate(.5turn)}}

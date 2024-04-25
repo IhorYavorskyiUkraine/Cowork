@@ -2,10 +2,10 @@ $humble-black: #1d1e1c;
 
 .insights {
 	padding: 7rem 0rem;
-	@media (max-width: 991px){
+	@media (max-width: 61.9375rem){
 		padding: 3rem 0rem;
 	}
-	@media (max-width: 771px){
+	@media (max-width: 48.1875rem){
 		padding: 4rem 0rem;
 	}
 	&__content {
@@ -74,7 +74,7 @@ $humble-black: #1d1e1c;
 			height: 100%;
 			object-fit: cover;
 			position: absolute;
-			border-radius: 24px;
+			border-radius: 1.5rem;
 			transition: all .3s;
 			&:hover {
 				transform: scale(1.01);
@@ -91,7 +91,7 @@ $humble-black: #1d1e1c;
 
 	&__trend {
 		padding: .125rem .5rem;
-		border-radius: 8px;
+		border-radius: .5rem;
 		font-weight: 600;
 		line-height: 150%;
 	}
