@@ -15,19 +15,67 @@
 }
 
 $second-family: "Neue Regrade", sans-serif;
+////////////////////VARIABLES////////////////////
+$humble-black: #1d1e1c;
+$pure-white: #fff;
+$unorganic-green: #d3f985;
+$sky-blue: #a6e8f6;
+$shiny-pink: #fcbedc;
+$almost-orange: #fbc899;
+$powerless-grey: #f1f1f1;
+$second-family: "NeueRegradeBold", sans-serif;
+$font-family: "GeneraSansRegular", sans-serif;
+$humble-black-hover: #3a3a3a;
+////////////////////DARK THEME////////////////////
+:root {
+	//btn black
+	--black-btn-bg-black: #1d1e1c;
+	--black-btn-text-white: #fff;
+	--black-btn-hover-black: #3a3a3a;
+	//btn black
+	//btn white
+	--white-btn-bg-white: #fff;
+	--white-btn-text-black: #1d1e1c;
+	--white-btn-hover-white: #f1f1f1;
+	//btn white
+	--font-color: #1d1e1c;
+	--heading-color: #1d1e1c;
+	--footer-color: #1d1e1c;
+	--background-color: #fff;
+	--trusted-bg: transparent;
+}
+
+[data-theme="dark"] {
+	///btn black
+	--black-btn-bg-black: #fff;
+	--black-btn-text-white: #1d1e1c;
+	--black-btn-hover-black: #f1f1f1;
+	//btn black
+	//btn white
+	--white-btn-bg-white: #fff;
+	--white-btn-text-black: #1d1e1c;
+	--white-btn-hover-white: #f1f1f1;
+	//btn white
+	--background-color: #1d1e1c;
+	--heading-color: #fff;
+	--font-color: #fff;
+	--font-color-bg-white: #1d1e1c;
+	--footer-color: #fff;
+	--trusted-bg: #fff;
+}
 ////////////////////NULL STYLE////////////////////
 body {
 	font-family: "GeneraSansRegular", sans-serif;
 	margin: 0;
-	color: #000;
 	line-height: 1;
-	background: #fff;
+	background-color: var(--background-color);
 	font-size: .875rem;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	transition: all .3s;
 }
 * {
 	padding: 0px;
@@ -82,17 +130,6 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
-////////////////////VARIABLES////////////////////
-$humble-black: #1d1e1c;
-$pure-white: #fff;
-$unorganic-green: #d3f985;
-$sky-blue: #a6e8f6;
-$shiny-pink: #fcbedc;
-$almost-orange: #fbc899;
-$powerless-grey: #f1f1f1;
-$second-family: "NeueRegradeBold", sans-serif;
-$font-family: "GeneraSansRegular", sans-serif;
-$humble-black-hover: #3a3a3a;
 ////////////////////CLASSES////////////////////
 .wrapper {
 	min-height: 100%;
@@ -113,18 +150,18 @@ $humble-black-hover: #3a3a3a;
 
 .label {
 	font-weight: 600;
+	color: var(--font-color);
 	font-size: .75rem;
 	line-height: 150%;
 	text-transform: uppercase;
 	font-family: $font-family;
-	color: $humble-black;
 }
 
 .title {
 	font-size: 3rem;
 	font-family: $second-family;
+	color: var(--heading-color);
 	font-weight: 700;
-	color: $humble-black;
 	img {
 		width: 11.25rem;
 		height: 3.625rem;
@@ -145,9 +182,9 @@ $humble-black-hover: #3a3a3a;
 }
 
 .text {
-	color: $humble-black;
 	font-size: .875rem;
 	line-height: 180%;
+	color: var(--font-color);
 }
 
 .btn {
@@ -156,7 +193,7 @@ $humble-black-hover: #3a3a3a;
 	border-radius: 2.625rem;
 	span {
 		font-weight: 600;
-		line-height: 150%;	
+		line-height: 150%;
 		$font-family: "General Sans Variable", sans-serif;	
 	}
 }
@@ -178,3 +215,4 @@ $humble-black-hover: #3a3a3a;
 }
 
 @keyframes l1 {to{transform: rotate(.5turn)}}
+

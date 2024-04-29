@@ -40,6 +40,6 @@
 - Create a design for the About, Pricing, Blog and Events pages. :x:
 - Сhange the item loading logic. :x:
 - Add loading spinner(maybe a skeleton instead of a spinner :man_shrugging:). :white_check_mark:
-- Add dark theme. :x:
+- Add dark theme. 50/50 :x:
 - Add Error Boundaries :white_check_mark:
 - Сlean up the code. :x:

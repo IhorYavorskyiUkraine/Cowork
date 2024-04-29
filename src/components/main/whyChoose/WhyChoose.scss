@@ -51,6 +51,9 @@ $second-family: "NeueRegradeBold", sans-serif;
 .whychoose-item {
 	list-style: none;
 	text-align: center;
+	background-color: var(--trusted-bg);
+	padding: 1rem 1rem;
+	border-radius: 2.625rem;
 	&__wrapper {
 	}
 
@@ -70,5 +73,6 @@ $second-family: "NeueRegradeBold", sans-serif;
 	}
 
 	&__text {
+		color: var(--font-color-bg-white) !important;
 	}
 }

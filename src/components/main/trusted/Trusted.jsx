@@ -20,7 +20,7 @@ const Trusted = () => {
 			return(
 				<li key={item. id} className="trusted__item trusted-item">
 					<div className="trusted-item__image">
-						<img src={`${item.image}`} alt="trusted item"/>
+						<img className="item-image" src={`${item.image}`} alt="trusted item"/>
 					</div>
 				</li>
 			)

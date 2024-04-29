@@ -49,12 +49,13 @@ $humble-black: #1d1e1c;
 	&__button {
 		margin: 0 auto;
 		transition: all .3s;
+		background: var(--white-btn-bg-white);
 		&:hover {
 			background: #f1f1f1;
 		}
 		&_disabled {
 			margin: 0 auto;
-			background: #f1f1f1;
+			background: var(--white-btn-hover-white);
 		}
 	}
 }
@@ -97,7 +98,7 @@ $humble-black: #1d1e1c;
 	}
 
 	&__time {
-		color: rgb(29, 30, 28);
+		color: var(--font-color);
 		font-weight: 400;
 		line-height: 180%;
 	}
@@ -107,9 +108,11 @@ $humble-black: #1d1e1c;
 		font-weight: 700;
 		line-height: 140%;
 		margin-bottom: 1.5625rem;
+		color: var(--heading-color)
 	}
 
 	&__more {
+		color: var(--font-color);
 	}
 }
 

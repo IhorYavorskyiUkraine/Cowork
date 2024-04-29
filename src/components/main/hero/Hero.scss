@@ -36,7 +36,7 @@ $humble-black-hover: #3a3a3a;
 		font-size: 6rem;
 		font-weight: 700;
 		font-family: $second-family;
-		color: $humble-black;
+		color: var(--heading-color);
 		margin-bottom: 2rem;
 		@media (max-width: 61.9375rem){
 			font-size: 4rem;
@@ -88,14 +88,17 @@ $humble-black-hover: #3a3a3a;
 
 	&__button {
 		color: #fff;
-		background: $humble-black;
+		background: var(--black-btn-bg-black);
 		transition: all .3s;
+		span {
+			color: var(--black-btn-text-white);
+		}
 		@media (max-width: 48.1875rem){
 			display: inline-flex;
 			align-items: center;
 		}
 		&:hover {
-			background: $humble-black-hover;
+			background: var(--black-btn-hover-black);
 		}
 	}
 

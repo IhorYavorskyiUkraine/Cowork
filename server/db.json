@@ -3,27 +3,27 @@
 		{
 			"id": 1,
 			"name": "1",
-			"image": "images/trusted/5.png"
+			"image": "images/trusted/1.png"
 		},
 		{
 			"id": 2,
 			"name": "2",
-			"image": "images/trusted/1.png"
+			"image": "images/trusted/2.png"
 		},
 		{
 			"id": 3,
 			"name": "3",
-			"image": "images/trusted/2.png"
+			"image": "images/trusted/3.png"
 		},
 		{
 			"id": 4,
 			"name": "4",
-			"image": "images/trusted/3.png"
+			"image": "images/trusted/4.png"
 		},
 		{
 			"id": 5,
 			"name": "5",
-			"image": "images/trusted/4.png"
+			"image": "images/trusted/5.png"
 		}
 	],
 	"hearClients": [

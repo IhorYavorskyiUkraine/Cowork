@@ -52,13 +52,13 @@ $humble-black-hover: #3a3a3a;
 
 	&__button {
 		display: inline-flex;
-		background: $humble-black;
+		background: var(--black-btn-bg-black);
 		transition: all .3s;
 		&:hover {
-			background: $humble-black-hover;
+			background: var(--black-btn-hover-black);
 		}
 		span {
-			color: #fff;
+			color: var(--black-btn-text-white);
 		}
 	}
 }

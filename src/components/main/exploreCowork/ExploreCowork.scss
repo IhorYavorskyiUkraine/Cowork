@@ -43,8 +43,12 @@
 
 	&__button {
 		transition: all .3s;
+		background-color: var(--white-btn-bg-white);
+		span {
+			color: var(--btn-text-black);
+		}
 		&:hover {
-			background: #f1f1f1;
+			background: var(--white-btn-hover-white);
 		}
 	}
 

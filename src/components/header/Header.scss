@@ -54,10 +54,10 @@ $second-family: "NeueRegradeBold", sans-serif;
 
 .menu {
 	display: grid;
-	grid-template-columns: 7.5rem auto 13.25rem;
+	grid-template-columns: 7.5rem auto 16.7rem 2rem;
 	align-items: center;
 	@media (max-width: 48.249rem){
-		grid-template-columns: 7.5rem auto 3.75rem;
+		grid-template-columns: 7.5rem auto 3.75rem 2rem;
 	}
 	&__logo {
 		display: flex;
@@ -105,8 +105,8 @@ $second-family: "NeueRegradeBold", sans-serif;
 	&__link {
 		font-weight: 400;
 		line-height: 180%;
-		color: $humble-black;
 		transition: all .3s;
+		color: var(--font-color);
 		&:hover {
 			color: $humble-black-hover;
 		}
@@ -135,27 +135,27 @@ $second-family: "NeueRegradeBold", sans-serif;
 	}
 	
 	&__login {
-		background: #fff;
+		background: var(--white-btn-bg-white);
 		transition: all .3s;
 		cursor: pointer;
 		&:hover {
-			background: #f1f1f1;
+			background: var(--white-btn-hover-white);
 		}
 		span {
-			color: $humble-black;
+			color: var(--white-btn-text-black);
 		}
 	}
 
 	&__signup {
 		cursor: pointer;
-		background: #000;
+		background: var(--black-btn-bg-black);
 		display: inline-flex;
 		transition: all .3s;
 		&:hover {
-			background: $humble-black-hover;
+			background: var(--black-btn-hover-black);
 		}
 		span {
-			color: #fff;
+			color: var(--black-btn-text-white);
 		}
 	}
 }

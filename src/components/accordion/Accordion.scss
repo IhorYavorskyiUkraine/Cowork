@@ -12,7 +12,7 @@
 			position: absolute;
 			width: 8.5rem;
 			height: .0625rem;
-			background: #000;
+			background: var(--font-color);;
 			bottom: 0;
 			left: 0;
 		}
@@ -31,7 +31,7 @@
 	}
 	&__button {
 		padding: 1.5625rem 0rem;
-		color: rgb(29, 30, 28);
+		color: var(--font-color);
 		cursor: pointer;
 		width: 100%;
 		text-align: left;
@@ -64,5 +64,6 @@
 
 	&__panel {
 		max-width: 25rem;
+		color: var(--font-color);
 	}
 }

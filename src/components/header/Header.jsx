@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import logo from "/images/header/logo.png";
 
 import BurgerMenu from "./burgerMenu/BurgerMenu";
+import DarkTheme from "../darkTheme/DarkTheme";
 
 import "./Header.scss"
 
@@ -39,6 +40,7 @@ const Header = () => {
 						</nav>
 						<div className="menu__buttons buttons">
 							<div className="buttons__links">
+								<DarkTheme/>
 								<Link to="/" className="buttons__login btn"><span>Log In</span></Link>
 								<Link to="/" className="buttons__signup btn"><span>Sign Up</span></Link>
 							</div>

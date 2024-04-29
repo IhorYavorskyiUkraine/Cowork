@@ -26,6 +26,12 @@ $font-family: "GeneraSansRegular", sans-serif;
 	}
 
 	&__item {
+		background-color: var(--trusted-bg);
+		padding: 1rem 1rem;
+		border-radius: 2.625rem;
 	}
 }
 
+.item-image {
+	fill: red;
+}
