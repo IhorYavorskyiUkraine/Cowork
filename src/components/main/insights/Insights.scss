@@ -53,9 +53,8 @@ $humble-black: #1d1e1c;
 		&:hover {
 			background: #f1f1f1;
 		}
-		&_disabled {
-			margin: 0 auto;
-			background: var(--white-btn-hover-white);
+		&:disabled {
+			background: #f1f1f1;
 		}
 	}
 }

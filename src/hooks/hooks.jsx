@@ -5,8 +5,7 @@ const useFetchData= () => {
 		try {
 			const response = await fetch('http://localhost:3001/tables');
 			const jsonData = await response.json();
-			const tables1to3 = jsonData.filter(table => table.id >= 1 && table.id <= `${index}`);
-			return tables1to3;
+			return jsonData;
 		} catch (error) {
 			console.error('Error', error);
 		}

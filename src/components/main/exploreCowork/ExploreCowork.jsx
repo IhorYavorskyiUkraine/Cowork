@@ -15,7 +15,7 @@ const ExploreCowork = () => {
 							className="exploreCowork__textwrapper"
 							initial={{y: 100}}
 							whileInView={{y: 0}}
-							transition={{duration: .4}}
+							transition={{duration: .3}}
 							viewport={{once: true}}
 						>
 							<p className="exploreCowork__label label">A Virtual Tour</p>
@@ -30,7 +30,7 @@ const ExploreCowork = () => {
 							className="exploreCowork__video"
 							initial={{y: 100}}
 							whileInView={{y: 0}}
-							transition={{duration: .4}}
+							transition={{duration: .3}}
 							viewport={{once: true}}
 						>
 							<video controls src={trailer}></video>

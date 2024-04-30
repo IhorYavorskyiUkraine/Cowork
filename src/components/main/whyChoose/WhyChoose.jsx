@@ -73,7 +73,7 @@ const WhyChoose = () => {
 							className="whychoose__title title"
 							initial={{y: 100}}
 							whileInView={{y: 0}}
-							transition={{duration: .4}}
+							transition={{duration: .3}}
 							viewport={{once: true}}
 						>
 						Why Choose <span><img src={img} alt="img"/></span> Cowork?
@@ -82,7 +82,7 @@ const WhyChoose = () => {
 											className="loader"
 											initial={{y: 100}}
 											whileInView={{y: 0}}
-											transition={{duration: .4}}
+											transition={{duration: .3}}
 											viewport={{once: true}}
 										></motion.div>
 										: 

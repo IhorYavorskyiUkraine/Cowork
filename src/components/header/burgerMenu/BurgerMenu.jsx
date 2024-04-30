@@ -24,7 +24,7 @@ const BurgerMenu = () => {
 				<div className={ lock ? "burger__overlay" : "burger__overlay hidden"}>
 					<div className="burger__header">
 						<div className="burger__logo">
-							<img src={burgerLogo} alt="burgerLogo"/>
+							<img className="burger__img" src={burgerLogo} alt="burgerLogo"/>
 						</div>
 						<button onClick={handleLock} className="burger__close">
 							<img src={burgerClose} alt="burgerClose"/>

@@ -55,7 +55,7 @@ const Trusted = () => {
 				className="trusted"
 				initial={{y: 100}}
 				whileInView={{y: 0}}
-				transition={{duration: .4}}
+				transition={{duration: .3}}
 				viewport={{once: true}}
 			>
 				<div className="container">

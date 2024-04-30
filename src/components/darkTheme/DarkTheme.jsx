@@ -1,23 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useState } from "react";
 
-import icon from "/images/header/dark.svg"
-
-import './DarkTheme.scss'
+import "./DarkTheme.scss";
 
 const DarkTheme = () => {
-	const [darkTheme, setDarkTheme] = useState(false);
+  const [selectedTheme, setSelectedTheme] = useState(localStorage.getItem("theme") || "light");
 
-	const toggleAttribute = () => {
-		darkTheme ? document.body.removeAttribute('data-theme') : document.body.setAttribute('data-theme', "dark");
-		setDarkTheme(!darkTheme);
-	};
+	const setTheme = theme => {
+		document.querySelector("body").setAttribute("data-theme", theme);
+		localStorage.setItem("theme", theme);
+	}
 
-	return(
-		<>
-			<button className="theme-btn" onClick={toggleAttribute} value="dark">
-				<img src={icon} alt="icon"/>
-			</button>
-		</>
+	useEffect(() => {
+		setTheme(selectedTheme);
+	}, [selectedTheme]);
+
+	const toggleTheme = () => {
+		const newTheme = selectedTheme === "dark" ? "light" : "dark";
+		setSelectedTheme(newTheme);
+	}
+
+	return (
+		<button className="theme-btn" value={selectedTheme}>
+			<label className="switch">
+			<input onChange={toggleTheme} checked={selectedTheme === "dark"} type="checkbox" />
+			<span className="slider"></span>
+			</label>
+		</button>
 	);
 }
 

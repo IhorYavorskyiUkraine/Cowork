@@ -29,6 +29,7 @@
 			display: flex;
 		}
 	}
+	
 	&__button {
 		padding: 1.5625rem 0rem;
 		color: var(--font-color);
@@ -41,6 +42,7 @@
 			position: absolute;
 			right: 0;
 			top: 25%;
+			filter: var(--header-logo-bg);
 		}
 
 		&[aria-expanded='true'],

@@ -12,14 +12,14 @@ import "./Insights.scss"
 const Insights = () => {
 
 	const [data, setData] = useState([]);
-	const [index, setIndex] = useState(2);
-	const [dataEnded, setDataEnded] = useState(false);
+	const [visibleData, setVisibleData] = useState(3);
+	const [loadingBtn, setLoadingBtn] = useState(false);
+
 	const {loading, startLoading, stopLoading} = useLoading();
-	
 	const{fetchTables} = useFetchData();
 
 	const renderItems = () => {
-		const items = data.map(item => {
+		const items = data.slice(0, visibleData).map(item => {
 			return(
 				<motion.li 
 					key={item. id}
@@ -47,28 +47,36 @@ const Insights = () => {
 				</motion.li>
 			)
 		})
-		return items;
+		return(
+			<ul className="insights__list">
+				{loading ? <div className="loader"></div> : items}
+			</ul>
+		);
 	}	
 
 	const onRequest = () => {
-		startLoading();
-		if(index > 10) {
-			setDataEnded(true);
-		}
-		
-		dataEnded ? stopLoading() : startLoading();
-
-		fetchTables(index)
-			.then(data => setData(data))
-			.then(stopLoading())
-			.then(setIndex(index + 3));
+		setTimeout(() => {
+			fetchTables()
+				.then(data => setData(data))
+				.catch(error => {
+					console.error("Error fetching data:", error);
+				});
+		}, 300);
 	}
 
 	useEffect(() => {
+		startLoading();
 		onRequest();
+		stopLoading();
 	}, []);
 
-	const clazz = loading ? "insights__button_disabled btn" : "insights__button btn";
+	const loadMore = () => {
+		setLoadingBtn(true);
+		setTimeout(() => {
+			setVisibleData(prev => prev + 3); 
+			setLoadingBtn(false);
+		}, 300);
+	};
 
 	return (
 		<>
@@ -76,7 +84,7 @@ const Insights = () => {
 				className="insights"
 				initial={{y: 100}}
 				whileInView={{y: 0}}
-				transition={{duration: .4}}
+				transition={{duration: .3}}
 				viewport={{once: true}}
 			>
 				<div className="container">
@@ -86,18 +94,12 @@ const Insights = () => {
 							<div className="insights__title title">Insights, Innovation, and <span> <img src={img} alt="img"/></span> Inspiration</div>
 							<div className="insights__p text">Stay updated on the latest trends in coworking, productivity tips, and success stories that define the Cowork experience.</div>
 						</div>
-						<ul className="insights__list">
 							{renderItems()}
-						</ul>
 						<div className="insights__btn">
-							<button 
-								className={clazz}
-								onClick={onRequest}
-								disabled={loading}
-								style={dataEnded ? {display: "none"} : null}
-							>
-								<span>View All</span>
-							</button>
+						{visibleData < data.length && (
+							<button className="insights__button btn" onClick={loadMore} disabled={loadingBtn}>
+								{ loadingBtn ? "Loading..." : "View More"}
+							</button>)}
 						</div>
 					</div>
 				</div>

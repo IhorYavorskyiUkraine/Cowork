@@ -14,7 +14,7 @@ const RoadMap = () => {
 							className="roadmap__column"
 							initial={{x: -100}}
 							whileInView={{x: 0}}
-							transition={{duration: .4}}
+							transition={{duration: .3}}
 							viewport={{once: true}}
 						>
 							<div className="roadmap__text">
@@ -27,7 +27,7 @@ const RoadMap = () => {
 							className="roadmap__column"
 							initial={{x: 100}}
 							whileInView={{x: 0}}
-							transition={{duration: .4}}
+							transition={{duration: .3}}
 							viewport={{once: true}}
 						>
 							<AccordionComponent/>

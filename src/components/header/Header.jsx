@@ -15,7 +15,7 @@ const Header = () => {
 				className="header"
 				initial={{opacity: 0}}
 				animate={{opacity: 1}}
-				transition={{duration: .4}}
+				transition={{duration: .3}}
 			>
 				<div className="container">
 					<div className="header__menu menu">
@@ -39,12 +39,14 @@ const Header = () => {
 							</ul>
 						</nav>
 						<div className="menu__buttons buttons">
-							<div className="buttons__links">
+							<div className="buttons__content">
 								<DarkTheme/>
-								<Link to="/" className="buttons__login btn"><span>Log In</span></Link>
-								<Link to="/" className="buttons__signup btn"><span>Sign Up</span></Link>
+								<div className="buttons__buttons">
+									<Link to="/" className="buttons__login btn"><span>Log In</span></Link>
+									<Link to="/" className="buttons__signup btn"><span>Sign Up</span></Link>
+								</div>
+								<BurgerMenu/>
 							</div>
-							<BurgerMenu/>
 						</div>
 					</div>
 				</div>

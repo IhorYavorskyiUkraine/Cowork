@@ -38,8 +38,8 @@
 ### What I want to change or add
 - Replace the react-burger-menu library with a custom burger menu. :white_check_mark:
 - Create a design for the About, Pricing, Blog and Events pages. :x:
-- Сhange the item loading logic. :x:
+- Сhange the show more functionality. :white_check_mark:
 - Add loading spinner(maybe a skeleton instead of a spinner :man_shrugging:). :white_check_mark:
-- Add dark theme. 50/50 :x:
+- Add dark theme. :white_check_mark:
 - Add Error Boundaries :white_check_mark:
 - Сlean up the code. :x:

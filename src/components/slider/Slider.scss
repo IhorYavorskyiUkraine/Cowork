@@ -61,6 +61,7 @@
 .swiper-button-prev {
 	top: .8rem !important;
 	transform: rotate(180deg);
+	filter: var(--header-logo-bg);
 	@media (max-width: 48.249rem){
 		top: .8rem !important; 
 	}
@@ -71,6 +72,7 @@
 
 .swiper-button-next {
 	top: .8rem !important;
+	filter: var(--header-logo-bg);
 	@media (max-width: 48.249rem){
 		top: .8rem !important; 
 	}

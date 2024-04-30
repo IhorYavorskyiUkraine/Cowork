@@ -14,7 +14,7 @@ const Statistics = () => {
 							className="statistics__column"
 							initial={{x: -100}}
 							whileInView={{x: 0}}
-							transition={{duration: .4}}
+							transition={{duration: .3}}
 							viewport={{once: true}}
 						>
 							<p className="statistics__label label">Cowork in Numbers</p>
@@ -42,7 +42,7 @@ const Statistics = () => {
 							className="statistics__right"
 							initial={{x: 100}}
 							whileInView={{x: 0}}
-							transition={{duration: .4}}
+							transition={{duration: .3}}
 							viewport={{once: true}}
 						>
 							<div className="statistics__image">
