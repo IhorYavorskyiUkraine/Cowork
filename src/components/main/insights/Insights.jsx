@@ -32,11 +32,11 @@ const Insights = () => {
 					<div className="insights-item__wrapper">
 						<div className="insights-item__image">
 							<a href="/">
-								<img src={`${item.image}`} alt="why choose item"/>
+								<img src={`${item.image}`} alt="insights item"/>
 							</a>
 						</div>
 						<div className="insights-item__top">
-							<p className="insights-item__trend" style={{background: `${item.style}`}}>{item.trend}</p>
+							<p className="insights-item__category" style={{background: `${item.style}`}}>{item.category}</p>
 							<p className="insights-item__time">{item.time}</p>
 						</div>
 						<h3 className="insights-item__title">

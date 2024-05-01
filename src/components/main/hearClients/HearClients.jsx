@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 // API REQUEST
 import {useFetchData, useLoading} from "../../../hooks/hooks.jsx";
 
-import Slider from "../../slider/Slider.jsx";
+import Slider from "./slider/Slider.jsx";
 
 import "./HearClients.scss"
 

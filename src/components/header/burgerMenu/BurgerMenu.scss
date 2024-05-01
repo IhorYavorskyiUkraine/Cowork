@@ -4,6 +4,7 @@ $humble-black-hover: #3a3a3a;
 
 .burger {
 	display: none;
+	z-index: 1000;
 	@media (max-width: 48.249rem){
 		display: block;
 	}
@@ -49,6 +50,7 @@ $humble-black-hover: #3a3a3a;
 		height: 100%;
 		background: var(--burger-bg-color);
 		transition: all .3s;
+		z-index: 1000;
 	}
 
 	&__footer {

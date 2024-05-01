@@ -1,4 +1,4 @@
-import AccordionComponent from "../../accordion/Accordion";
+import AccordionComponent from "./accordion/Accordion";
 
 import { motion } from "framer-motion";
 

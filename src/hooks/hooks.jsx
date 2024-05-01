@@ -41,7 +41,27 @@ const useFetchData= () => {
 		}
 	}, []);
 
-	return {fetchTables, fetchTrusted, fetchTWhyChoose, fetchHearClients};
+	const fetchPricingPlans = useMemo(() => async () => {
+		try {
+			const response = await fetch('http://localhost:3001/pricingPlans');
+			const jsonData = await response.json();
+			return jsonData;
+		} catch (error) {
+			console.error('Error', error);
+		}
+	}, []);
+
+	const fetchBlog = useMemo(() => async () => {
+		try {
+			const response = await fetch('http://localhost:3001/blog');
+			const jsonData = await response.json();
+			return jsonData;
+		} catch (error) {
+			console.error('Error', error);
+		}
+	}, []);
+
+	return {fetchTables, fetchTrusted, fetchTWhyChoose, fetchHearClients, fetchPricingPlans, fetchBlog};
 }
 
 const useLoading = () => {

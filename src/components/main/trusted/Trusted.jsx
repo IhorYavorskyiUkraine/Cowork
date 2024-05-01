@@ -25,7 +25,7 @@ const Trusted = () => {
 				</li>
 			)
 		});
-		return items;
+		return <ul className="trusted__list">{items}</ul>;
 	}
 	
 	//FROM JS FILE
@@ -61,9 +61,7 @@ const Trusted = () => {
 				<div className="container">
 					<div className="trusted__content">
 						<h2 className="trusted__label label">Trusted by Leading Companies</h2>
-							<ul className="trusted__list">
-								{loading ? <div className="loader"></div> : renderItems()}
-							</ul>
+							{loading ? <div className="loader"></div> : renderItems()}
 						</div>
 					</div>
 			</motion.section>

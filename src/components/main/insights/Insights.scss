@@ -89,7 +89,7 @@ $humble-black: #1d1e1c;
 		gap: 1rem;
 	}
 
-	&__trend {
+	&__category {
 		padding: .125rem .5rem;
 		border-radius: .5rem;
 		font-weight: 600;
@@ -107,7 +107,7 @@ $humble-black: #1d1e1c;
 		font-weight: 700;
 		line-height: 140%;
 		margin-bottom: 1.5625rem;
-		color: var(--heading-color)
+		color: var(--heading-color);
 	}
 
 	&__more {

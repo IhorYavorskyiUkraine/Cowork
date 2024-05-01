@@ -49,6 +49,10 @@ $font-family: "GeneraSansRegular", sans-serif;
 	--burger-logo: brightness(100) invert(1);
 	//logos
 	--loader: #131314;
+	//price
+	--price-bg: #131314;
+	--price-text: #e3e3e3;
+	//price
 }
 
 [data-theme="dark"] {
@@ -81,6 +85,10 @@ $font-family: "GeneraSansRegular", sans-serif;
 	--burger-logo: none;
 	//logos
 	--loader: #f1f1f1;
+	//price
+	--price-bg: #f1f1f1;
+	--price-text: #131314;
+	//price
 }
 ////////////////////NULL STYLE////////////////////
 body {

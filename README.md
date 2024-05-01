@@ -37,7 +37,7 @@
 - https://www.npmjs.com/package/react-error-boundary
 ### What I want to change or add
 - Replace the react-burger-menu library with a custom burger menu. :white_check_mark:
-- Create a design for the About, Pricing, Blog and Events pages. :x:
+- Create a design for the About :white_check_mark:, Pricing :white_check_mark:, Blog :white_check_mark: and Events :x: pages. :x:
 - Сhange the show more functionality. :white_check_mark:
 - Add loading spinner(maybe a skeleton instead of a spinner :man_shrugging:). :white_check_mark:
 - Add dark theme. :white_check_mark:

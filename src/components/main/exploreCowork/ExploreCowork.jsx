@@ -1,7 +1,8 @@
 import { motion } from "framer-motion"
 
-import img from "/images/exploreCowork/title.png"
-import trailer from "/video/trailer.mp4"
+import img from "/images/exploreCowork/title.png";
+import poster from "/images/exploreCowork/poster.png";
+
 
 import "./ExploreCowork.scss"
 
@@ -33,7 +34,7 @@ const ExploreCowork = () => {
 							transition={{duration: .3}}
 							viewport={{once: true}}
 						>
-							<video controls src={trailer}></video>
+							<video controls src="" poster={poster}></video>
 						</motion.div>
 					</div>
 				</div>
