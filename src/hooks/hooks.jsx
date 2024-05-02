@@ -1,11 +1,11 @@
 import { useMemo, useState } from "react";
 
 const useFetchData= () => {
-	const fetchTables = useMemo(() => async (index) => {
+	const fetchTables = useMemo(() => async () => {
 		try {
 			const response = await fetch('http://localhost:3001/tables');
-			const jsonData = await response.json();
-			return jsonData;
+			const tablesData = await response.json();
+			return tablesData;
 		} catch (error) {
 			console.error('Error', error);
 		}
@@ -14,8 +14,8 @@ const useFetchData= () => {
 	const fetchTrusted = useMemo(() => async () => {
 		try {
 			const response = await fetch('http://localhost:3001/trustedCompanies');
-			const jsonData = await response.json();
-			return jsonData;
+			const trustedData = await response.json();
+			return trustedData;
 		} catch (error) {
 			console.error('Error', error);
 		}
@@ -24,8 +24,8 @@ const useFetchData= () => {
 	const fetchTWhyChoose = useMemo(() => async () => {
 		try {
 			const response = await fetch('http://localhost:3001/whyChoose');
-			const jsonData = await response.json();
-			return jsonData;
+			const whyChooseData = await response.json();
+			return whyChooseData;
 		} catch (error) {
 			console.error('Error', error);
 		}
@@ -34,8 +34,8 @@ const useFetchData= () => {
 	const fetchHearClients = useMemo(() => async () => {
 		try {
 			const response = await fetch('http://localhost:3001/hearClients');
-			const jsonData = await response.json();
-			return jsonData;
+			const hearClentsData = await response.json();
+			return hearClentsData;
 		} catch (error) {
 			console.error('Error', error);
 		}
@@ -44,8 +44,8 @@ const useFetchData= () => {
 	const fetchPricingPlans = useMemo(() => async () => {
 		try {
 			const response = await fetch('http://localhost:3001/pricingPlans');
-			const jsonData = await response.json();
-			return jsonData;
+			const pricingPlansData = await response.json();
+			return pricingPlansData;
 		} catch (error) {
 			console.error('Error', error);
 		}
@@ -54,14 +54,32 @@ const useFetchData= () => {
 	const fetchBlog = useMemo(() => async () => {
 		try {
 			const response = await fetch('http://localhost:3001/blog');
-			const jsonData = await response.json();
-			return jsonData;
+			const blogData = await response.json();
+			return blogData;
 		} catch (error) {
 			console.error('Error', error);
 		}
 	}, []);
 
-	return {fetchTables, fetchTrusted, fetchTWhyChoose, fetchHearClients, fetchPricingPlans, fetchBlog};
+	const fetchSingleBlog = useMemo(() => async (id) => {
+		try {
+			const response = await fetch(`http://localhost:3001/blog/${id}`);
+			const singleBlogData = await response.json();
+			return singleBlogData;
+		} catch (error) {
+			console.error('Error', error);
+		}
+	}, []);
+
+	return {
+		fetchTables,
+		fetchTrusted, 
+		fetchTWhyChoose, 
+		fetchHearClients, 
+		fetchPricingPlans, 
+		fetchBlog,
+		fetchSingleBlog
+	};
 }
 
 const useLoading = () => {

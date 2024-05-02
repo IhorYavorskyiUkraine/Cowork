@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { ErrorBoundary } from "react-error-boundary";
 
 import {useFetchData, useLoading} from "../../hooks/hooks";
 
@@ -69,7 +70,9 @@ const Pricing = () => {
 					<div className="container">
 						<div className="pricing__content">
 							<h1 className="pricing__title">Plans & Pricing</h1>
-							{loading ? <div className="loader"></div> : renderItems()}
+							<ErrorBoundary fallback={<img className="errorBoundary" src="https://media1.tenor.com/m/ZvLReph5qCIAAAAC/skill-issue.gif"/>}>
+								{loading ? <div className="loader"></div> : renderItems()}
+							</ErrorBoundary>
 						</div>
 					</div>
 				</motion.section>

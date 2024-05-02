@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import logo from "/images/header/logo.png";
 
 import BurgerMenu from "./burgerMenu/BurgerMenu";
-import DarkTheme from "../darkTheme/DarkTheme";
+import DarkTheme from "./darkTheme/DarkTheme";
 
 import "./Header.scss"
 

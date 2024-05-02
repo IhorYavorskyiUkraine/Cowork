@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import {useFetchData, useLoading} from "../../hooks/hooks.jsx";
 
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
+import Header from "../header/Header.jsx";
+import Footer from "../footer/Footer.jsx";
 
 import "./Blog.scss"
 
@@ -27,30 +27,23 @@ const Blog = () => {
 
 		const items = filteredItems.slice(0, visibleData).map(item => {
 			return(
-				<motion.li 
-					key={item. id}
-					className="blog__item blog-item"
-					initial={{y: 100}}
-					whileInView={{y: 0}}
-					transition={{duration: .3}}
-					viewport={{once: true}}
-				>
+				<li key={item. id}className="blog__item blog-item">
 					<div className="blog-item__wrapper">
 						<div className="blog-item__image">
-							<a href="/">
+							<Link to={`/blog/${item.id}`}>
 								<img src={`${item.image}`} alt="blog item"/>
-							</a>
+							</Link>
 						</div>
 						<div className="blog-item__top">
 							<p className="blog-item__category" style={{background: `${item.style}`}}>{item.category}</p>
 							<p className="blog-item__time">{item.time}</p>
 						</div>
 						<h3 className="blog-item__title">
-							<a href="/">{item.title}</a>
+							<Link to={`/blog/${item.id}`}>{item.title}</Link>
 						</h3>
-						<a href={item.more} className="blog-item__more">Read More</a>
+						<Link to={`/blog/${item.id}`} className="blog-item__more">Read More</Link>
 					</div>
-				</motion.li>
+				</li>
 			)
 		})
 		return(

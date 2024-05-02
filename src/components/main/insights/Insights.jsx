@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 //JS FILE
 // import { serverData } from "../../../../server/db.js"
 // API REQUEST
@@ -31,18 +32,18 @@ const Insights = () => {
 				>
 					<div className="insights-item__wrapper">
 						<div className="insights-item__image">
-							<a href="/">
+							<Link to={`/blog/${item.id}`}>
 								<img src={`${item.image}`} alt="insights item"/>
-							</a>
+							</Link>
 						</div>
 						<div className="insights-item__top">
 							<p className="insights-item__category" style={{background: `${item.style}`}}>{item.category}</p>
 							<p className="insights-item__time">{item.time}</p>
 						</div>
 						<h3 className="insights-item__title">
-							<a href="/">{item.title}</a>
+							<Link to={`/blog/${item.id}`}>{item.title}</Link>
 						</h3>
-						<a href={item.more} className="insights-item__more">Read More</a>
+						<Link to={`/blog/${item.id}`} className="insights-item__more">Read More</Link>
 					</div>
 				</motion.li>
 			)
@@ -72,10 +73,8 @@ const Insights = () => {
 
 	const loadMore = () => {
 		setLoadingBtn(true);
-		setTimeout(() => {
 			setVisibleData(prev => prev + 3); 
 			setLoadingBtn(false);
-		}, 300);
 	};
 
 	return (

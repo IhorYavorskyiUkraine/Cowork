@@ -1,16 +1,16 @@
 import { ErrorBoundary } from "react-error-boundary";
 
-import Header from "../header/Header";
-import Hero from "./hero/Hero";
-import Trusted from "./trusted/Trusted"
-import WhyChoose from "./whyChoose/WhyChoose";
-import ExploreCowork from "./exploreCowork/ExploreCowork";
-import Statistics from "./statistics/Statistics";
-import HearClients from "./hearClients/HearClients";
-import RoadMap from "./roadmap/Roadmap";
-import SeizeMoment from "./seizeMoment/SeizeMoment";
-import Insights from "./insights/Insights";
-import Footer from "../footer/Footer";
+import Header from "../../components/header/Header";
+import Hero from "../../components/main/hero/Hero";
+import Trusted from "../../components/main/trusted/Trusted"
+import WhyChoose from "../../components/main/whyChoose/WhyChoose";
+import ExploreCowork from "../../components/main/exploreCowork/ExploreCowork";
+import Statistics from "../../components/main/statistics/Statistics";
+import HearClients from "../../components/main/hearClients/HearClients";
+import RoadMap from "../../components/main/roadmap/Roadmap";
+import SeizeMoment from "../../components/main/seizeMoment/SeizeMoment";
+import Insights from "../../components/main/insights/Insights";
+import Footer from "../../components/footer/Footer";
 
 const Main = () => {
 	return(

@@ -1,12 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 //PAGES
-import Main from './components/main/Main';
-import About from './components/about/About';
-import Pricing from './components/pricing/Pricing';
-import Blog from './components/blog/Blog';
-import Events from './components/events/Events';
-//NOT FOUND
-import NotFoundPage from './components/notFoundPage/NotFoundPage';
+import Main, {
+	About,
+	Pricing,
+	Blog, 
+	BlogSinglePage, 
+	Events, 
+	NotFoundPage
+} from './pages';
 
 import './App.scss'
 
@@ -31,6 +32,12 @@ const router = createBrowserRouter([
 		element: <Blog/>,
 		errorElement: <NotFoundPage/>
 	},
+	{
+		path: '/blog/:id',
+		element: <BlogSinglePage/>,
+		errorElement: <NotFoundPage/>
+	}
+	,
 	{
 		path: '/events',
 		element: <Events/>,

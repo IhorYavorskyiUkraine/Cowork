@@ -40,6 +40,7 @@
 - Create a design for the About :white_check_mark:, Pricing :white_check_mark:, Blog :white_check_mark: and Events :x: pages. :x:
 - Сhange the show more functionality. :white_check_mark:
 - Add loading spinner(maybe a skeleton instead of a spinner :man_shrugging:). :white_check_mark:
+- Add React Lazy. :white_check_mark:
 - Add dark theme. :white_check_mark:
 - Add Error Boundaries :white_check_mark:
 - Сlean up the code. :x:
