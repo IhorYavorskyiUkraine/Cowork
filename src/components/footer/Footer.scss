@@ -1,209 +1,207 @@
 $humble-black: #1d1e1c;
 
 .footer {
-	padding: 4rem 0rem;
-	@media (max-width: 48.1875rem){
-		padding: 3rem 0rem;
-	}
+   padding: 4rem 0rem;
+   @media (max-width: 48.1875rem) {
+      padding: 3rem 0rem;
+   }
 }
 
 .footer-cowork {
-	display: grid;
-	grid-template-columns: 31.25rem minmax(30rem, 36.875rem);
-	padding: 3rem;
-	background: var(--black-btn-bg-black);
-	border-radius: 3rem;
-	color: var(--black-btn-text-white);
-	justify-content: space-between;
-	margin-bottom: 2rem;
-	@media (max-width: 61.9375rem){
-		grid-template-columns: 1fr;
-	}
-		&__main {
-			@media (max-width: 61.9375rem){
-				display: inline-flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
-		}
+   display: grid;
+   grid-template-columns: 31.25rem minmax(30rem, 36.875rem);
+   padding: 3rem;
+   background: var(--black-btn-bg-black);
+   border-radius: 3rem;
+   color: var(--black-btn-text-white);
+   justify-content: space-between;
+   margin-bottom: 2rem;
+   @media (max-width: 61.9375rem) {
+      grid-template-columns: 1fr;
+   }
+   &__main {
+      @media (max-width: 61.9375rem) {
+         display: inline-flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+   }
 
-		&__logo {
-			margin-bottom: 2rem;
-			width: 7.375rem;
-			height: 1.5rem;
-			position: relative;
-			img {
-				max-width: 100%;
-				height: 100%;
-				position: absolute;
-				object-fit: cover;
-				filter: var(--footer-logo-bg);
-			}
-		}
+   &__logo {
+      margin-bottom: 2rem;
+      width: 7.375rem;
+      height: 1.5rem;
+      position: relative;
+      img {
+         max-width: 100%;
+         height: 100%;
+         position: absolute;
+         object-fit: cover;
+         filter: var(--footer-logo-bg);
+      }
+   }
 
-		&__label {
-			color: var(--black-btn-text-white) !important;
-			margin-bottom: 1.5rem;
-			@media (max-width: 61.9375rem){
-				text-align: center;
-			}
-		}
+   &__label {
+      color: var(--black-btn-text-white) !important;
+      margin-bottom: 1.5rem;
+      @media (max-width: 61.9375rem) {
+         text-align: center;
+      }
+   }
 
-		&__form {
-			display: grid;
-			grid-template-columns: minmax(15.625rem, 22.5rem) 7.3125rem;
-			margin-bottom: 1.5rem;
-			justify-content: start;
-			input {
-				color: var(--black-btn-text-white);
-			}
-			@media (max-width: 61.9375rem){
-				margin-bottom: 1rem;
-				width: 100%;
-				justify-content: center;
-			}
-			@media (max-width: 48.1875rem){
-				grid-template-rows: 2.8125rem;
-				grid-template-columns: auto;
-				row-gap: 1rem;
-			}
-		}
+   &__form {
+      display: grid;
+      grid-template-columns: minmax(15.625rem, 22.5rem) 7.3125rem;
+      margin-bottom: 1.5rem;
+      justify-content: start;
+      input {
+         color: var(--black-btn-text-white);
+      }
+      @media (max-width: 61.9375rem) {
+         margin-bottom: 1rem;
+         width: 100%;
+         justify-content: center;
+      }
+      @media (max-width: 48.1875rem) {
+         grid-template-rows: 2.8125rem;
+         grid-template-columns: auto;
+         row-gap: 1rem;
+      }
+   }
 
-		&__input {
-			max-width: 22.5rem;
-			background: transparent;
-			padding: .75rem;
-			color: #fff;
-			border-bottom: .0625rem solid var(--black-btn-text-white);
-			input {
-				max-width: 100%;
-				height: 1.3125rem;
-				&:focus {
-					outline: none;
-				}
-			}
-		}
+   &__input {
+      max-width: 22.5rem;
+      background: transparent;
+      padding: 0.75rem;
+      color: #fff;
+      border-bottom: 0.0625rem solid var(--black-btn-text-white);
+      input {
+         max-width: 100%;
+         height: 1.3125rem;
+         &:focus {
+            outline: none;
+         }
+      }
+   }
 
-		&__btn {
-			width: 100%;
-			display: inline-flex;
-			justify-content: center;
-		}
+   &__btn {
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+   }
 
-		&__button {
-			background: #fff;
-			margin-left: 1.3rem;
-			margin: 0rem 0rem 0rem 1.5rem;
-			transition: all .3s;
-			&:hover {
-				background: #f1f1f1;
-			}
-			@media (max-width: 61.9375rem){
-				margin-left: 0rem; 
-			}
-			span {
-				color: #000;
-			}
-		}
+   &__button {
+      background: #fff;
+      margin-left: 1.3rem;
+      margin: 0rem 0rem 0rem 1.5rem;
+      transition: all 0.3s;
+      &:hover {
+         background: #f1f1f1;
+      }
+      @media (max-width: 61.9375rem) {
+         margin-left: 0rem;
+      }
+      span {
+         color: #000;
+      }
+   }
 
-		&__agree {
-			color: var(--black-btn-text-white) !important;
-			@media (max-width: 61.9375rem){
-				margin-bottom: 2.5rem;
-				text-align: center;
-			}
-		}
+   &__agree {
+      color: var(--black-btn-text-white) !important;
+      @media (max-width: 61.9375rem) {
+         margin-bottom: 2.5rem;
+         text-align: center;
+      }
+   }
 
-		&__columns {
-			display: grid;
-			grid-template-columns: repeat(3, minmax(3rem, 10.625rem));
-			padding: 0rem 0rem 0rem 1rem;
-			justify-content: space-between;
-			@media (max-width: 61.9375rem){
-				column-gap: 4rem;
-				text-align: center;
-			}
-			@media (max-width: 48.1875rem){
-				grid-template-columns: auto;
-				text-align: center;
-				margin: 0 auto;
-			}
-		}
+   &__columns {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(3rem, 10.625rem));
+      padding: 0rem 0rem 0rem 1rem;
+      justify-content: space-between;
+      @media (max-width: 61.9375rem) {
+         column-gap: 4rem;
+         text-align: center;
+      }
+      @media (max-width: 48.1875rem) {
+         grid-template-columns: auto;
+         text-align: center;
+         margin: 0 auto;
+      }
+   }
 
-		&__column {
-			@media (max-width: 48.1875rem){
-				margin-bottom: 1.5rem;
-			}
-		}
+   &__column {
+      @media (max-width: 48.1875rem) {
+         margin-bottom: 1.5rem;
+      }
+   }
 
-		&__title {
-			font-size: .75rem;
-			font-weight: 600;
-			line-height: 150%;
-			text-transform: uppercase;
-			margin-bottom: 1.5rem;
-			@media (max-width: 48.1875rem){
-				margin-bottom: .5rem; 
-			}
-		}
+   &__title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 150%;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      @media (max-width: 48.1875rem) {
+         margin-bottom: 0.5rem;
+      }
+   }
 
-		&__links {
-			
-		}
+   &__links {
+   }
 
-		&__link {
-			font-size: .875rem;
-			line-height: 180%;
-			padding: .45rem 0rem;
-			transition: all .3s;
-			&:hover {
-				text-decoration: underline;
-			}
-			@media (max-width: 48.1875rem){
-				padding: .125rem 0rem; 
-			}
-		}
+   &__link {
+      font-size: 0.875rem;
+      line-height: 180%;
+      padding: 0.45rem 0rem;
+      transition: all 0.3s;
+      &:hover {
+         text-decoration: underline;
+      }
+      @media (max-width: 48.1875rem) {
+         padding: 0.125rem 0rem;
+      }
+   }
 }
 
 .footer-rights {
+   &__columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @media (max-width: 48.1875rem) {
+         grid-template-columns: auto;
+         text-align: center;
+      }
+   }
 
-		&__columns {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			@media (max-width: 48.1875rem){
-				grid-template-columns: auto;
-				text-align: center;
-			}
-		}
+   &__column {
+      display: flex;
+      @media (max-width: 48.1875rem) {
+         justify-content: center;
+      }
+   }
 
-		&__column {
-			display: flex;
-			@media (max-width: 48.1875rem){
-				justify-content: center;
-			}
-		}
+   &__rights {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--font-color);
+   }
 
-		&__rights {
-			text-align: center;
-			margin-bottom: 1rem;
-			color: var(--font-color);
-		}
+   &__items {
+      display: flex;
+      justify-content: end;
+      gap: 1.5rem;
+      color: var(--font-color);
+      @media (max-width: 48.1875rem) {
+         justify-content: center;
+      }
+   }
 
-		&__items {
-			display: flex;
-			justify-content: end;
-			gap: 1.5rem;
-			color: var(--font-color);
-			@media (max-width: 48.1875rem){
-				justify-content: center;
-			}
-		}
-
-		&__item {
-			text-wrap: nowrap;
-			a {
-				text-decoration: underline;
-			}
-		}
+   &__item {
+      text-wrap: nowrap;
+      a {
+         text-decoration: underline;
+      }
+   }
 }

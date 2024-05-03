@@ -1,69 +1,69 @@
 $second-family: "NeueRegradeBold", sans-serif;
 
 .about {
-	padding: 7rem 0rem;
-	@media (max-width: 61.9375rem){
-		padding: 3rem 0rem;
-	}
-	@media (max-width: 48.1875rem){
-		padding: 4rem 0rem;
-	}
-	&__content {
-		display: grid;
-		grid-template-columns: 39rem 1fr;
-		column-gap: 4rem;
-		@media (max-width: 61.9375rem){
-			grid-template-columns: 26rem 1fr;
-		}
-		@media (max-width: 48.1875rem){
-			grid-template-columns: auto;
-			row-gap: 2rem;
-		}
-	}
+   padding: 7rem 0rem;
+   @media (max-width: 61.9375rem) {
+      padding: 3rem 0rem;
+   }
+   @media (max-width: 48.1875rem) {
+      padding: 4rem 0rem;
+   }
+   &__content {
+      display: grid;
+      grid-template-columns: 39rem 1fr;
+      column-gap: 4rem;
+      @media (max-width: 61.9375rem) {
+         grid-template-columns: 26rem 1fr;
+      }
+      @media (max-width: 48.1875rem) {
+         grid-template-columns: auto;
+         row-gap: 2rem;
+      }
+   }
 
-	&__column {
-	}
+   &__column {
+   }
 
-	&__text {
-		@media (max-width: 48.1875rem){
-			text-align: center;
-		}
-	}
+   &__text {
+      @media (max-width: 48.1875rem) {
+         text-align: center;
+      }
+   }
 
-	&__title {
-		font-size: 4rem;
-		font-weight: 700;
-		font-family: $second-family;
-		color: var(--heading-color);
-		margin-bottom: 2rem;
-	}
+   &__title {
+      font-size: 4rem;
+      font-weight: 700;
+      font-family: $second-family;
+      color: var(--heading-color);
+      margin-bottom: 2rem;
+   }
 
-	&__about {
-		color: var(--font-color);
-		font-size: 1.5rem;
-	}
+   &__about {
+      color: var(--font-color);
+      font-size: 1.5rem;
+   }
 
-	&__image {
-		position: relative;
-		max-width: 38.75rem;
-		height: 40rem;
-		@media (max-width: 61.9375rem){
-			height: 30rem;
-		}
-		@media (max-width: 48.1875rem){
-			height: 20rem;
-			max-width: 21.875rem;
-			margin: 0 auto;
-		}
-		img {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			border-radius: 3rem;
-			@media (max-width: 48.1875rem){
-				border-radius: 1.5rem;
-			}
-		}
-	}
+   &__image {
+      position: relative;
+      max-width: 38.75rem;
+      height: 40rem;
+      @media (max-width: 61.9375rem) {
+         height: 30rem;
+      }
+      @media (max-width: 48.1875rem) {
+         height: 20rem;
+         max-width: 21.875rem;
+         margin: 0 auto;
+      }
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-radius: 3rem;
+         @media (max-width: 48.1875rem) {
+            border-radius: 1.5rem;
+         }
+      }
+   }
 }

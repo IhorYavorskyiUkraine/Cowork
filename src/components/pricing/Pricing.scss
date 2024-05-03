@@ -1,123 +1,121 @@
 $second-family: "NeueRegradeBold", sans-serif;
 
 .pricing {
-	padding: 7rem 0rem;
-	@media (max-width: 61.9375rem){
-		padding: 3rem 0rem;
-	}
-	@media (max-width: 48.1875rem){
-		padding: 4rem 0rem;
-	}
-	&__content {
-	}
+   padding: 7rem 0rem;
+   @media (max-width: 61.9375rem) {
+      padding: 3rem 0rem;
+   }
+   @media (max-width: 48.1875rem) {
+      padding: 4rem 0rem;
+   }
+   &__content {
+   }
 
-	&__title {
-		font-size: 4rem;
-		font-weight: 700;
-		font-family: $second-family;
-		color: var(--heading-color);
-		margin-bottom: 2rem;
-		text-align: center;
-	}
+   &__title {
+      font-size: 4rem;
+      font-weight: 700;
+      font-family: $second-family;
+      color: var(--heading-color);
+      margin-bottom: 2rem;
+      text-align: center;
+   }
 
-	&__plans {
-		display: grid;
-		grid-template-columns: repeat(3, 18.75rem);
-		column-gap: 2rem;
-		justify-content: center;
-		@media (max-width: 61.9375rem){
-			grid-template-columns: repeat(3, 14.5rem);
-		}
-		@media (max-width: 48.1875rem){
-			grid-template-columns: auto;
-			row-gap: 2rem;
-		}
-	}
+   &__plans {
+      display: grid;
+      grid-template-columns: repeat(3, 18.75rem);
+      column-gap: 2rem;
+      justify-content: center;
+      @media (max-width: 61.9375rem) {
+         grid-template-columns: repeat(3, 14.5rem);
+      }
+      @media (max-width: 48.1875rem) {
+         grid-template-columns: auto;
+         row-gap: 2rem;
+      }
+   }
 
-	&__plan {
-
-	}
+   &__plan {
+   }
 }
 
 .plan {
-	color: var(--price-text);
-	padding: 2rem;
-	background: var(--price-bg);
-	border-radius: 2.625rem;
-	&__name {
-		font-size: 1.5rem;
-		margin-bottom: 1rem;
-	}
+   color: var(--price-text);
+   padding: 2rem;
+   background: var(--price-bg);
+   border-radius: 2.625rem;
+   &__name {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+   }
 
-	&__about {
-		font-size: 1rem;
-		margin-bottom: 3rem;
-	}
+   &__about {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+   }
 
-	&__price {
-		font-size: 3rem;
-		margin-bottom: 3rem;
-	}
+   &__price {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+   }
 
-	&__btn {
-		display: inline-flex;
-		width: 100%;
-		justify-content: center;
-		background: var(--white-btn-bg-white);
-		margin-bottom: 2rem;
-		transition: all .3s;
-		span {
-			color: var(--white-btn-text-black);
-		}
-		&:hover {
-			background: var(--white-btn-hover-white);
-		}
-	}
+   &__btn {
+      display: inline-flex;
+      width: 100%;
+      justify-content: center;
+      background: var(--white-btn-bg-white);
+      margin-bottom: 2rem;
+      transition: all 0.3s;
+      span {
+         color: var(--white-btn-text-black);
+      }
+      &:hover {
+         background: var(--white-btn-hover-white);
+      }
+   }
 
-	&__feature {
-	}
-	
-	&__features {
-		position: relative;
-		padding-top: 2rem;
-		font-size: 1rem;
-		&:before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: .0625rem;
-			opacity: .75;
-			top: 0;
-			background: var(--price-text);
-		}
-	}
+   &__feature {
+   }
 
+   &__features {
+      position: relative;
+      padding-top: 2rem;
+      font-size: 1rem;
+      &:before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 0.0625rem;
+         opacity: 0.75;
+         top: 0;
+         background: var(--price-text);
+      }
+   }
 }
 
 .feature {
-	&__title {
-		font-size: 1.5rem;
-		color: var(--price-text);
-		margin-bottom: 2rem;
-	}
-	
-	&__check {
-		height: 16px;
-		width: 16px;
-		filter: var(--burger-logo);
-	}
+   &__title {
+      font-size: 1.5rem;
+      color: var(--price-text);
+      margin-bottom: 2rem;
+   }
 
-	&__feature {
-		display: flex;
-		&:not(:last-child){
-			margin-bottom: 1rem;
-		}
-		img {
-			margin-right: 1rem;
-		}
-	}
+   &__check {
+      height: 16px;
+      width: 16px;
+      filter: var(--burger-logo);
+   }
 
-	&__item {
-		font-size: 1rem;
-	}
+   &__feature {
+      display: flex;
+      &:not(:last-child) {
+         margin-bottom: 1rem;
+      }
+      img {
+         margin-right: 1rem;
+      }
+   }
+
+   &__item {
+      font-size: 1rem;
+   }
 }
